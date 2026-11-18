@@ -1,0 +1,199 @@
+---
+title: Annexes
+bibliography: references.bib
+csl: www/csl/apa-6th-edition.csl
+---
+
+## Data appendix {#sec-oadata}
+
+| Variables | Sources |
+|:------------------------------|:--------:|
+| **GDP & productive capacity** |  |
+| GDP | GMD |
+| Potential GDP | WEO |
+| **Labour market outcomes** |  |
+| Older worker labour force participation rate (55-64) | OECD |
+| Total labour force participation rate | CPDS |
+| Unemployment rate | GMD |
+| **Consumption & savings** |  |
+| Consumption | GMD |
+| Gross domestic savings | WDI |
+| Gross savings | WDI |
+| **Investment** |  |
+| Investment | GMD |
+| Fixed investment | GMD |
+| **Government debt & fiscal space** |  |
+| Public pension expenditure | OECD (SOCX) |
+| Central government expenditure | GMD |
+| General government expenditure | GMD |
+| Central government debt | IMF (GDD) |
+| General government debt | IMF (GDD) |
+| **External sector** |  |
+| Exports | GMD |
+| Imports | GMD |
+| Trade balance | GMD |
+| Current account balance | GMD |
+| **Productivity** |  |
+| Total factor productivity | PWT |
+| GDP per worker (constant USD) | GMD & CPDS |
+| **Control variables** |  |
+| Old age dependency ratio | WDI |
+| Crisis dummy | GMD |
+
+: Data sources {#tbl-placeholder}
+
+GMD: Global Macro Database [@GMD2025]\
+WEO: World Economic Outlook (IMF)\
+CPDS: Comparative Political Data Set [@armingeon2025data]\
+WDI: World Development Indicators (World Bank)\
+SOCX: Social Expenditure Database (OECD)\
+GDD: Global Debt Database (IMF)\
+PWT: Penn World Table (version 10.01) [@feenstra2015next]
+
+<!-- \textcolor{red}{/?$\textbackslash$  Stats Descriptives ? Graphiques pour présenter nos réformes ? ... } -->
+
+## Additional results {#sec-oaresults}
+
+::: {#fig-placebos layout-ncol=3}
+
+![GDP (constant USD)](figures/Placebo_lnrGDP.png){#fig-placebo-lnrgdp}
+
+![Potential GDP (constant USD)](figures/Placebo_lnrGDP_pot.png){#fig-placebo-lnrgdp-pot}
+
+![Consumption (constant USD)](figures/Placebo_lnrCons.png){#fig-placebo-lnrcons}
+
+![Consumption (%GDP)](figures/Placebo_cons_GDP.png){#fig-placebo-cons-gdp}
+
+![Older worker LFPR (55-64)](figures/Placebo_tx_act_5564.png){#fig-placebo-tx-act-5564}
+
+![Labour force participation rate](figures/Placebo_labfopar.png){#fig-placebo-labfopar}
+
+![Gross domestic savings (constant USD)](figures/Placebo_lnrGrossDomSavings.png){#fig-placebo-lnrgrossdomsavings}
+
+![Gross domestic savings (%GDP)](figures/Placebo_GrossDomSavings_GDP.png){#fig-placebo-grossdomsavings-gdp}
+
+![Investment (constant USD)](figures/Placebo_lnrInv.png){#fig-placebo-lnrinv}
+
+![Investment (%GDP)](figures/Placebo_inv_GDP.png){#fig-placebo-inv-gdp}
+
+![Fixed investment (constant USD)](figures/Placebo_lnrFinv.png){#fig-placebo-lnrfinv}
+
+![Fixed investment (%GDP)](figures/Placebo_finv_GDP.png){#fig-placebo-finv-gdp}
+
+Robustness check: Placebo tests
+:::
+
+::: {.fig-notes}
+Notes: The figure reports the empirical distributions of impulse responses obtained by randomly permuting reforms across country-year observations and re-estimating the local projections (1000 replications). Each distribution corresponds to one projection horizon. Blue densities refer to responses associated with the *Age* reforms and red densities to responses associated with the *Capitalisation* reforms. The placebo distributions provide an empirical benchmark for assessing whether random reform timing generates systematic dynamic responses. LFPR denotes labour force participation rate.
+:::
+
+<!-- Control for fiscal consolidation -->
+
+::: {#fig-fiscalconsolidation layout-ncol=3}
+
+![GDP (constant USD)](figures/FiscalConso_lnrGDP.png){#fig-fiscalconso-lnrgdp}
+
+![Potential GDP (constant USD)](figures/FiscalConso_lnrGDP_pot.png){#fig-fiscalconso-lnrgdp-pot}
+
+![Consumption (constant USD)](figures/FiscalConso_lnrCons.png){#fig-fiscalconso-lnrcons}
+
+![Consumption (%GDP)](figures/FiscalConso_lnrCons.png){#fig-fiscalconso-lnrcons-b}
+
+![Older worker LFPR (55-64)](figures/FiscalConso_tx_act_5564.png){#fig-fiscalconso-tx-act-5564}
+
+![Labour force participation rate](figures/FiscalConso_labfopar.png){#fig-fiscalconso-labfopar}
+
+![Gross domestic savings (constant USD)](figures/FiscalConso_lnrGrossDomSavings.png){#fig-fiscalconso-lnrgrossdomsavings}
+
+![Gross domestic savings (%GDP)](figures/FiscalConso_GrossDSavingsGDP.png){#fig-fiscalconso-grossdsavingsgdp}
+
+![Investment (constant USD)](figures/FiscalConso_lnrInv.png){#fig-fiscalconso-lnrinv}
+
+![Investment (%GDP)](figures/FiscalConso_inv_GDP.png){#fig-fiscalconso-inv-gdp}
+
+![Fixed investment (constant USD)](figures/FiscalConso_lnrFinv.png){#fig-fiscalconso-lnrfinv}
+
+![Fixed investment (%GDP)](figures/FiscalConso_finv_GDP.png){#fig-fiscalconso-finv-gdp}
+
+Robustness check: Controlling for fiscal consolidations
+:::
+
+::: {.fig-notes}
+Notes: The figures report our baseline estimates alongside specifications that additionally control for fiscal consolidation. The baseline specification is extended to include, contemporaneously and with up to three lags, alternative measures of fiscal consolidation: the overall size of the consolidation (Size), spending cuts (Spending), and tax increases (Tax). LFPR denotes labour force participation rate. Inferences based on bootstrapped standard errors (1000 replications). Shaded areas (thin lines) denote the 68% (95%) pointwise confidence intervals.
+:::
+
+<!-- Ref : https://onlinelibrary.wiley.com/doi/epdf/10.1111/jeea.12083 -->
+
+<!-- External pressures -->
+
+::: {#fig-externalpressure layout-ncol=3}
+
+![GDP (constant USD)](figures/Spillover_lnrGDP.png){#fig-spillover-lnrgdp}
+
+![Potential GDP (constant USD)](figures/Spillover_lnrGDP_pot.png){#fig-spillover-lnrgdp-pot}
+
+![Consumption (constant USD)](figures/Spillover_lnrCons.png){#fig-spillover-lnrcons}
+
+![Consumption (%GDP)](figures/Spillover_lnrCons.png){#fig-spillover-cons-gdp}
+
+![Older worker LFPR (55-64)](figures/Spillover_tx_act_5564.png){#fig-spillover-tx-act-5564}
+
+![Labour force participation rate](figures/Spillover_labfopar.png){#fig-spillover-labfopar}
+
+![Gross domestic savings (constant USD)](figures/Spillover_lnrGrossDomSavings.png){#fig-spillover-lnrgrossdomsavings}
+
+![Gross domestic savings (%GDP)](figures/Spillover_GrossDSavingsGDP.png){#fig-spillover-grossdsavingsgdp}
+
+![Investment (constant USD)](figures/Spillover_lnrInv.png){#fig-spillover-lnrinv}
+
+![Investment (%GDP)](figures/Spillover_inv_GDP.png){#fig-spillover-inv-gdp}
+
+![Fixed investment (constant USD)](figures/Spillover_lnrFinv.png){#fig-spillover-lnrfinv}
+
+![Fixed investment (%GDP)](figures/Spillover_finv_GDP.png){#fig-spillover-finv-gdp}
+
+Robustness check: Controlling for spillovers and external pressure
+:::
+
+::: {.fig-notes}
+Notes: The figures report our baseline estimates alongside specifications that additionally control for spillovers and external pressure. The baseline specification is extended to include, contemporaneously and with up to three lags, the leave-one-out means of our age and funded-pension reform measures, as well as the leave-one-out mean of an indicator variable for reform-voting years. LFPR denotes labour force participation rate. Inferences based on bootstrapped standard errors (1000 replications). Shaded areas (thin lines) denote the 68% (95%) pointwise confidence intervals.
+:::
+
+<!-- Ref : https://onlinelibrary.wiley.com/doi/epdf/10.1111/jeea.12083 -->
+
+<!-- Uncertainty (Google trends) -->
+
+::: {#fig-uncertainty layout-ncol=3}
+
+![GDP (constant USD)](figures/Googletr_lnrGDP.png){#fig-googletr-lnrgdp}
+
+![Potential GDP (constant USD)](figures/Googletr_lnrGDP_pot.png){#fig-googletr-lnrgdp-pot}
+
+![Consumption (constant USD)](figures/Googletr_lnrCons.png){#fig-googletr-lnrcons}
+
+![Consumption (%GDP)](figures/Googletr_lnrCons.png){#fig-googletr-lnrcons-b}
+
+![Older worker LFPR (55-64)](figures/Googletr_tx_act_5564.png){#fig-googletr-tx-act-5564}
+
+![Labour force participation rate](figures/Googletr_labfopar.png){#fig-googletr-labfopar}
+
+![Gross domestic savings (constant USD)](figures/Googletr_lnrGrossDomSavings.png){#fig-googletr-lnrgrossdomsavings}
+
+![Gross domestic savings (%GDP)](figures/Googletr_GrossDSavingsGDP.png){#fig-googletr-grossdsavingsgdp}
+
+![Investment (constant USD)](figures/Googletr_lnrInv.png){#fig-googletr-lnrinv}
+
+![Investment (%GDP)](figures/Googletr_inv_GDP.png){#fig-googletr-inv-gdp}
+
+![Fixed investment (constant USD)](figures/Googletr_lnrFinv.png){#fig-googletr-lnrfinv}
+
+![Fixed investment (%GDP)](figures/Googletr_finv_GDP.png){#fig-googletr-finv-gdp}
+
+Robustness check: Controlling for uncertainty
+:::
+
+::: {.fig-notes}
+Notes: The figures report our baseline estimates alongside specifications that additionally control for uncertainty relying on Google Trends data (2004-2025). The baseline specification is extended to include, contemporaneously and with up to three lags, the domestic Google Trends data (domestic uncertainty) as well as the leave-one-out mean of Google Trends data (foreign uncertainty). LFPR denotes labour force participation rate. Inferences based on bootstrapped standard errors (1000 replications). Shaded areas (thin lines) denote the 68% (95%) pointwise confidence intervals.
+:::
+
+<!-- Ref : https://onlinelibrary.wiley.com/doi/epdf/10.1111/jeea.12083 -->
