@@ -1,0 +1,841 @@
+\documentclass[11pt,english,a4paper, twoside, authoryear]{article}
+%\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsfonts,mathrsfs}
+%\usepackage{cite}  % commented: conflicts with natbib
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{enumitem}
+\usepackage[toc,page,header]{appendix}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+\usepackage[toc,page]{appendix}
+\usepackage{graphicx}
+\usepackage[font=scriptsize, labelfont=bf]{caption}
+\usepackage{subcaption}
+\usepackage{ragged2e}
+\usepackage{indentfirst}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{lscape}
+%\usepackage{authblk}
+\usepackage{epstopdf}
+\usepackage{supertabular}
+\usepackage{setspace}
+%\usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage{eurosym}
+\doublespacing
+\usepackage{multirow}
+\usepackage{geometry}
+\usepackage{verbatim}
+%\usepackage{ulem}
+%\usepackage{natbib}
+%\geometry{verbose, margin= 2 cm}
+%\geometry{scale=20, nohead}
+\usepackage{xcolor}
+\usepackage[colorlinks=true, citecolor=blue,linkcolor=blue]{hyperref}
+\usepackage[authoryear, round, comma]{natbib}
+%\usepackage{authblk}
+%\usepackage{apalike}
+
+%\usepackage[authoryear]{natbib}  % superseded by line above
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newtheorem{newresults}{Result}
+\usepackage{amsthm}
+{\theoremstyle{definition}
+\newtheorem{testable}{Testable Implication}}
+
+\newtheorem{hypothesis}{Hypothesis}
+
+\setcounter{MaxMatrixCols}{10}
+
+\newcommand{\pdf}[3]{
+\begin{center}
+\includegraphics[width=#1,height=#2,keepaspectratio]{#3.pdf}
+\end{center}
+}
+\DeclareGraphicsExtensions{.eps,.ps,.eps.gz,.ps.gz}
+\newcommand{\spac}{\rule[-2mm]{0mm}{3mm}}
+\renewcommand{\floatpagefraction}{.9}
+\renewcommand{\textfraction}{.1}
+\oddsidemargin 0cm \evensidemargin 0cm \textwidth 16cm \topmargin -1.5cm \textheight 23.5 cm \linespread{2}
+\newcommand{\dsum} {\displaystyle\sum}
+\newcommand\cites[1]{\citeauthor{#1}'s\ (\citeyear{#1})}
+
+
+\newcommand{\sym}[1]{\rlap{$#1$}}
+
+\usepackage{blindtext}
+
+
+%\fancyhead[L]{\itshape{CEPII Working Paper}}
+%\fancyhead[R]{\itshape{The collateral channel within and between countries}}
+
+
+
+\graphicspath{{figures/}}
+\begin{document}
+
+%\begin{spacing}{1.1}
+\baselineskip17pt
+
+\title{\textbf{The Macro Effects of Pension Reforms}\thanks{We thank XXX. The usual disclaimer applies}}
+
+
+%\date{\textit{January 2026}}
+
+\urlstyle{rm}
+
+\author{Océane Blomme \footnote{Universit\'{e} de Lille, LEM-CNRS (UMR 9221), email: oceane.blomme@univ-lille.fr} \quad Carl Grekou\footnote{CEPII, email: carl.grekou@cepii.fr} \quad Thomas Grjebine\footnote{CEPII, email: thomas.grjebine@cepii.fr} \quad Jérôme Héricourt\footnote{Corresponding author: Université d'Évry Paris-Saclay, CEPS, and CEPII, email: jerome.hericourt@univ-evry.fr}
+}
+
+
+
+\maketitle
+
+%test
+
+
+
+%\end{spacing}
+
+\begin{abstract}
+\begin{spacing}{1}
+This paper studies the macroeconomic effects of pension reforms in advanced economies. We construct a new narrative database of major pension reforms for 17 OECD countries over the period 1980--2025, measuring the timing, magnitude, and annual phase-in of reforms across statutory retirement ages, early-retirement rules, contribution requirements, and private pension pillars. To summarize the multidimensional nature of pension systems, we use a conditional factor analysis that extracts two orthogonal reform dimensions net of the business cycle: an \emph{Age} factor, capturing reforms that delay retirement, and a \emph{Capitalization} factor, capturing shifts toward funded private pension schemes. We then estimate dynamic responses using local projections. Retirement-age reforms generate a broad expansionary response: they raise labour force participation among older workers, increase actual and potential GDP, support consumption and investment, and reduce public pension expenditure and government debt as a share of GDP. These results suggest that age-based pension reforms operate not as standard fiscal retrenchments, but as positive labour-supply shocks with demand effects driven by higher labour income. By contrast, capitalization reforms are associated with persistent declines in GDP, consumption, investment, and productivity, while raising government debt ratios, consistent with transition costs and a demand-compression channel dominating any capital-accumulation effect over the medium run. Overall, the paper shows that the macroeconomic effects of pension reforms depend crucially on the instrument used: delaying retirement can improve both growth and fiscal sustainability, whereas shifting toward funded schemes does not appear to generate the expected macroeconomic gains within a ten-year horizon.
+\end{spacing}
+\end{abstract}
+
+\noindent \textbf{JEL Classification:} E62, H55, J26, H30, C33. \
+\noindent \textbf{Keywords:} Pension reforms; retirement age; funded pensions; fiscal policy; labour supply; local projections.
+
+\thispagestyle{empty}
+
+\newpage
+
+%\begin{spacing}{1.3}
+\section{Introduction}
+%\citet{}, \citalp{}
+
+
+
+
+Population ageing is one of the most important structural challenges facing advanced economies. As longevity increases and the share of older individuals rises, public pension systems come under growing pressure. Governments are therefore repeatedly called upon to reform pension arrangements in order to preserve fiscal sustainability, extend working lives, and adapt retirement systems to demographic change. These reforms are politically salient and economically consequential: they affect not only public finances, but also labour supply, household income, consumption, savings, investment, and aggregate output.
+
+Yet the macroeconomic effects of pension reforms remain difficult to assess. Pension reforms are multidimensional policy interventions. Some reforms raise statutory retirement ages or tighten early-retirement rules, thereby directly affecting the timing of labour market exit. Others modify contribution requirements, benefit formulas, indexation rules, or the balance between pay-as-you-go and funded pension pillars. These instruments are often bundled within broader reform packages, phased in over long periods, and implemented in macroeconomic environments that may themselves influence reform decisions. As a result, identifying the causal effects of pension reforms requires both detailed institutional information and an empirical strategy capable of distinguishing between different reform channels.
+
+Most of the existing literature has focused on the labour-market effects of pension reforms, especially the response of older workers to changes in retirement incentives. A large body of evidence shows that retirement behaviour is highly responsive to institutional rules governing eligibility ages, benefit accrual, and early-retirement provisions \citep{GruberWise1999}. More recent empirical work provides causal evidence on the effects of increasing retirement ages: \citet{StaubliZweimuller2013} show that raising the early retirement age significantly increases employment among older workers. Recent work has also emphasized the importance of implementation lags and anticipation effects. In particular, \citet{BiZubairy2023} show that restrictive pension reforms may have very different effects depending on whether they are implemented immediately or phased in over a long horizon: while immediate reforms tend to increase labour force participation among older workers, long phase-in periods may induce early exits as workers attempt to lock in pre-reform benefits. These findings highlight that timing and design are central to understanding the effects of pension reforms.
+
+The labour-supply response to retirement-age reforms is not mechanical, however. Empirical evidence also shows that increases in retirement ages may generate short-run adjustment costs: while some workers remain employed for longer, others who would otherwise have claimed pension benefits remain in unemployment, inactivity, or disability for longer periods \citep{Rabate2020, Dubois2016, Leduigou2016}. At the aggregate level, however, the evidence does not support the view that delayed retirement crowds out employment opportunities for younger workers. Cross-country and country-specific studies generally find that employment among older and younger workers tends to move together rather than in opposite directions \citep{MunnellWu2012, Wise2017, Kalwij2010, BenSalem2010}. This suggests that the macroeconomic effects of retirement-age reforms depend not only on mechanical labour-force participation effects, but also on the response of aggregate demand, labour demand, and firms' adjustment margins.
+
+By contrast, less is known about the broader macroeconomic consequences of pension reforms. Beyond labour supply, reforms may affect aggregate demand through changes in household income and expected pension wealth; they may influence savings and investment through intertemporal substitution and capital accumulation; and they may alter fiscal space through changes in pension expenditure and public debt. Moreover, different reform instruments may operate through opposite channels. Raising the retirement age can be interpreted as a positive labour-supply shock that increases productive capacity and labour income. Shifting toward funded private pension schemes may instead compress current consumption, generate transition costs for the public sector, and only gradually affect capital accumulation. Treating pension reforms as a single policy shock may therefore obscure substantial heterogeneity in their macroeconomic effects.
+
+Macroeconomic models and institutional syntheses also emphasize that the different levers used to restore pension-system balance operate through distinct channels \citep{COR2026MacroLeviers}. Increases in contribution rates tend to affect the labour tax wedge, disposable income, production costs, and ultimately employment and output. Changes in pension benefits primarily affect retirees' disposable income and aggregate consumption in the short run, but may also induce life-cycle responses through savings and labour supply. By contrast, increases in retirement ages act primarily as positive labour-supply shocks, raising employment, potential output, and fiscal space over the medium run \citep{HvidingMerette1998, KaramMuirPereiraTuladhar2010, Morgavi2024, COR2026MacroLeviers}. These mechanisms imply that pension reforms should not be treated as homogeneous fiscal consolidation shocks: their aggregate effects depend on the instrument used, the timing of implementation, and the behavioural responses they trigger.
+
+This paper studies the dynamic macroeconomic effects of pension reforms in advanced economies. We make three contributions. First, we construct a new narrative database of major pension reforms for 17 OECD countries over the period 1980--2025, building on the narrative approach to policy shocks and on recent pension reform datasets \citep{Ramey2009, RomerRomer2010, Beetsma2020, BiZubairy2023, romp_political_2024}. The database measures the timing, magnitude, and annual phase-in of reforms across statutory retirement ages, early-retirement rules, contribution requirements, and private pension pillars. This allows us to go beyond standard dummy-based measures of pension reforms and to capture both the magnitude and the annual phase-in of policy changes.
+
+Second, we propose a parsimonious characterization of pension reforms using a conditional factor analysis. Pension systems are described by several correlated policy variables, which often move together as part of broader reform packages. We summarize this information into two orthogonal dimensions, net of the business cycle. The first factor, labelled the \emph{Age} factor, captures reforms that delay retirement by raising statutory or early-retirement ages. The second factor, labelled the \emph{Capitalization} factor, captures shifts toward funded private pension schemes. This decomposition makes it possible to distinguish between reforms that primarily affect the timing of retirement and reforms that alter the financing structure of pension systems.
+
+Third, we estimate the dynamic effects of these reform dimensions using local projections \citep{Jorda2005}. Our specification includes country and year fixed effects, lagged dependent variables, demographic controls, labour-market controls, the alternative pension reform factor, and crisis dummies. This framework allows us to trace the response of labour-market outcomes, GDP, consumption, savings, investment, public finances, external balances, and productivity over a ten-year horizon.
+
+Our results reveal a sharp contrast between retirement-age reforms and capitalization reforms. Reforms that delay retirement generate a broad expansionary response. They significantly raise the labour force participation rate of workers aged 55--64 and increase aggregate participation without evidence of crowding out younger workers. Consistent with the evidence on short-run adjustment frictions, the increase in older workers' participation is not necessarily equivalent to a one-for-one increase in employment: some individuals may remain temporarily in unemployment or inactivity before reaching the new retirement age. Nevertheless, the aggregate response indicates that these transitional frictions do not offset the expansionary effects of delayed retirement on labour supply, output, and fiscal ratios. They also raise real GDP and potential GDP, indicating that the output gains are not purely cyclical. Consumption and investment increase in levels, while investment also rises as a share of GDP. On the fiscal side, public pension expenditure declines as a share of GDP and government debt ratios fall persistently. These results suggest that age-based reforms should not be interpreted as standard fiscal retrenchment shocks. Rather, they operate as positive labour-supply shocks that also generate demand effects through higher labour income: workers who remain employed longer receive wages that typically exceed pension benefits, supporting household consumption and firms' investment decisions.
+
+The effects of capitalization reforms are markedly different. Shifts toward funded private pension schemes are associated with persistent declines in GDP, consumption, investment, and productivity over the ten-year horizon. Public pension expenditure falls in levels, but debt ratios increase, consistent with transition costs: as contributions are redirected toward private accounts, governments must continue financing existing pay-as-you-go obligations while losing contribution revenue. Contrary to the standard prediction that funded schemes should raise savings and investment through capital accumulation, we find no evidence that this channel dominates within the medium run. Instead, the results point to a demand-compression mechanism and fiscal transition costs that outweigh any positive capital-market effect over the horizon considered.
+
+The paper therefore shows that the macroeconomic effects of pension reforms depend crucially on the instrument used. Delaying retirement can simultaneously support growth and improve fiscal sustainability, provided that the labour-income and labour-supply channels dominate anticipation effects. By contrast, reforms that shift pension financing toward funded schemes may entail substantial transition costs and contractionary effects, at least over the medium run. More broadly, our findings underline the importance of distinguishing between pension reform instruments rather than treating all restrictive pension reforms as equivalent fiscal consolidation measures.
+
+The rest of the paper is organized as follows. Section 2 discusses the theoretical and empirical literature on public spending, pension systems, and macroeconomic transmission channels. Section 3 presents the pension reform database. Section 4 describes the factor analysis and empirical strategy. Section 5 reports the dynamic effects of pension reforms on labour-market outcomes, GDP, consumption, savings, investment, public finances, the external sector, and productivity. Section 6 concludes.
+
+
+\section{Government Spending, Pensions Reforms and Macro Dynamics}
+
+\subsection{Public Spending and Economic Growth}
+
+The relationship between public spending and economic growth has long been a central issue in macroeconomics. In the neoclassical framework, fiscal policy primarily affects the level of output, with limited long-run growth effects. However, endogenous growth models have emphasized that certain categories of public expenditure can exert persistent effects on growth by entering the production function and enhancing private sector productivity. In this perspective, \citet{Barro1990} and \citet{Devarajan1996} introduce a distinction between productive and unproductive public expenditures. Productive expenditures, such as infrastructure or education, raise the marginal productivity of private inputs, while other expenditures primarily affect welfare without directly influencing growth. This distinction has become central to both theoretical and empirical analyses of fiscal policy.
+
+More recent contributions confirm that the growth effects of fiscal policy depend not only on the size of government but also on the allocation of expenditures. \citet{Sardoni2024} develops a Domar-inspired growth model in which public expenditures are partitioned into productive outlays---investment in physical and human capital that directly raises the economy's growth rate---and unproductive outlays, broadly equivalent to public consumption, which affect aggregate demand but not long-run productivity. The model shows that reorienting public spending toward productive investment raises the equilibrium growth rate and can stabilize the public debt-to-GDP ratio even in the presence of primary deficits, provided the resulting growth rate exceeds the interest rate on debt. The key policy implication is that the composition, not merely the level, of public spending is what determines whether fiscal intervention is growth-enhancing.
+
+Empirical evidence, however, initially appears inconclusive. Cross-country analyses reveal substantial model uncertainty and sensitivity to specification choices \citep{MoralBenito2012}, reflecting the multiplicity of channels through which fiscal policy operates and the difficulty of isolating causal effects. Subsequent analyses focus on the composition of public spending, which plays a crucial role in shaping macroeconomic outcomes. \citet{Gemmell2016} provide evidence that reallocating spending toward infrastructure and education is associated with higher long-run GDP levels, whereas social welfare expenditures may have weaker or even negative effects on output. Similarly, \citet{Ardanaz2021} demonstrate that the effects of fiscal consolidations depend critically on which components of spending are adjusted. Reductions in public investment are found to significantly amplify output losses, whereas protecting investment can mitigate or even reverse contractionary effects. These findings are consistent with the broader literature on fiscal multipliers, which shows that public investment tends to have larger and more persistent effects than current expenditure.
+
+Taken together, these results suggest that different categories of public spending operate through distinct transmission mechanisms, with heterogeneous implications for growth, demand, and productivity.
+
+\subsection{Transfers, Pension Systems, and Macroeconomic Channels}
+
+Within public expenditure, pension systems constitute a major component of social transfers and play a central role in macroeconomic dynamics. Their effects operate through several interrelated channels affecting both aggregate demand and supply.
+
+First, pension benefits directly influence household consumption. \citet{RomerRomer2016} establish, using a narrative identification approach for the United States, that permanent increases in social security benefits generate a significant but transitory consumption response, while temporary changes have no significant effect. \citet{BiZubairy2023} extend this narrative methodology to pension retrenchments across ten OECD countries, documenting that the macroeconomic response depends critically on the motivation behind, and implementation timing of, policy changes---a methodological lineage that is central to our own empirical strategy. In both cases, the consumption effects tend to be short-lived and do not necessarily translate into sustained increases in output or employment. The magnitude of this channel depends on households' saving behavior, with higher saving rates among retirees dampening the impact on aggregate demand.
+
+Second, pension systems affect intertemporal choices through wealth effects. Changes in expected pension benefits alter individuals' lifetime resources, thereby influencing savings and labor supply decisions. A reduction in pension generosity may induce higher savings and delayed retirement, supporting capital accumulation and labor supply in the long run.
+
+Third, pension policies shape labor supply incentives over the life cycle. By modifying the returns to continued work, they affect both retirement timing and labor market participation. These mechanisms imply that pension systems simultaneously influence consumption, savings, and labor supply, generating complex general equilibrium effects.
+
+\subsection{Pension Reforms and Labor Supply: Micro and Macro Evidence}
+
+A substantial body of empirical literature examines the effects of pension reforms on labor supply, particularly at older ages. Early contributions, notably by \citet{GruberWise1999}, document large cross-country differences in retirement behavior driven by pension incentives. These studies show that retirement decisions are highly responsive to institutional features such as eligibility ages and benefit rules. More recent empirical work provides causal evidence on the effects of increasing the retirement age. \citet{StaubliZweimuller2013} find that raising the early retirement age significantly increases employment among older workers. Similar conclusions are reached in a variety of institutional contexts, confirming that retirement age reforms are an effective tool to raise labor force participation at older ages.
+
+The construction of systematic data on pension reforms has itself been an important research contribution. \citet{Beetsma2020} build a comprehensive narrative dataset of pension reform measures for a large set of OECD countries over the period 1970--2017, documenting whether reforms expand or contract pension arrangements and which population groups they affect. Their main finding is that the timing of pension reforms is driven by business cycle conditions, with retrenchment measures more likely during downturns, while demographic pressures determine the long-run trend but not the short-run dynamics. Crucially, however, their dataset does not record the motivation behind policy changes or the length of implementation lags---two dimensions that turn out to be central to identifying causal effects, as demonstrated by \citet{BiZubairy2023}. This identification challenge mirrors that faced in the broader structural reform literature: \citet{DuvalFurceri2018} address the same endogeneity problem using a narrative dataset of major reforms for labor and product market reforms in 26 advanced economies, finding that product market reforms raise productivity and output over the medium term while the effects of labor market reforms depend on the state of the business cycle. %Our paper follows this methodological tradition, applying local projections to a narrative-identified measure of structural pension reforms.
+
+A crucial qualification, however, concerns the timing of reforms. \citet{BiZubairy2023} show that the labor market response depends critically on whether reforms are implemented immediately or phased in with implementation lags. When retrenchments take effect without delay, workers close to retirement stay in the labor force longer, consistent with an income effect channel. By contrast, when reforms are announced with prolonged phase-in periods---averaging close to a decade in their data, and often exceeding fifteen years---labor force participation rates for the 55--64 age group decline, as workers exit the market early to lock in benefits under the pre-reform regime. This fiscal foresight channel, compounded by an uncertainty channel when reforms signal further future cutbacks, can dominate and reverse the standard income effect. The magnitude of the negative labor force participation rate response is larger for fundamental, age- and contribution-based reforms with long lags, and in countries where citizens have low trust in government. This finding implies that the direction of the effect of a retirement age reform on the employment of older workers is not unconditionally positive: it depends on the reform's design, notably its announcement horizon.
+
+Importantly, concerns about potential crowding-out effects on younger workers are not supported by the empirical evidence. \citet{MunnellWu2012} show that higher employment among older workers does not reduce employment opportunities for younger cohorts in the United States; if anything, the two move together, consistent with a demand-complementarity view of the labor market. \citet{Dai2022} provide a theoretical foundation for this result within a labor search framework that explicitly models cross-market interactions between young and old workers. Through a capital-skill complementarity channel, an increase in the share of older workers raises the marginal product of younger workers, generating a positive effect on youth employment---a mechanism that can offset the negative crowding-out effect operating through cross-market matching. These findings suggest that the aggregate employment effect of delayed retirement depends on which channel dominates, and that the sign of the effect on younger workers is not uniformly negative.
+
+At the same time, pension reforms may generate heterogeneous effects across individuals and firms. Workers with higher human capital or better health are more likely to remain employed, while more vulnerable groups may experience transitions toward unemployment or inactivity. At the firm level, delayed retirement can affect internal labor market dynamics and career progression, leading to short-term organizational adjustments.
+
+Regarding productivity, the empirical literature does not identify systematic negative effects of an ageing workforce. Productivity outcomes depend on the interaction between experience, skills, and organizational adaptation within firms, as well as complementarities across workers of different ages. \citet{Dai2022} formalize this through a nested CES production function in which older workers are more complementary to capital than younger workers---a capital-skill complementarity that raises the productivity and wages of young workers even as the share of older workers increases. This suggests that productivity effects of delayed retirement are heterogeneous across worker types and depend on the production technology, rather than being uniformly negative.
+
+
+\subsection{A Unified Framework of Pension Reform Transmission Channels}
+
+Pension reforms can be interpreted as fiscal policy shocks affecting the economy through multiple transmission channels. Changes in contribution rates primarily affect labor costs and disposable income, thereby influencing employment, consumption, and investment. Modifications in pension benefits operate mainly through demand and wealth effects, while increases in the retirement age act as positive labor supply shocks.
+
+These different instruments generate distinct short-run and long-run dynamics, a point systematically quantified by \citet{KaramMuirPereiraTuladhar2010} using the IMF's Global Integrated Monetary and Fiscal model (GIMF) for five major world regions. They find that pension reforms can have positive effects on GDP growth both in the short run---propelled by rising labor income and consumption following retirement age increases---and in the long run, as lower government debt crowds in private investment. Among the three reform instruments they consider (retirement age increases, benefit cuts, and contribution rate hikes), raising the retirement age yields the strongest output impact in both the short and long run, operating through demand effects of higher labor income and supply effects of expanded productive capacity. Benefit cuts and contribution rate increases, by contrast, tend to depress consumption in the short run while generating fiscal savings that support investment over time. As \citet{BiZubairy2023} emphasize, however, these dynamics depend critically on the implementation horizon: when reforms come with long announcement lags, foresight and uncertainty effects can dominate and temporarily depress labor force participation, reversing the expected positive employment effect before the reform is fully phased in.
+
+This framework highlights that pension reforms affect not only the sustainability of public finances but also key macroeconomic variables through general equilibrium interactions involving labor supply, consumption, savings, and production decisions.
+
+\subsection{Testable Relationships}\label{sec:TR}
+
+The literature surveyed above allows us to derive a set of testable relationships regarding the macroeconomic effects of pension reforms. Because our empirical strategy identifies two orthogonal dimensions of reform---a retirement timing dimension (\textit{Age factor}) and a pension financing structure dimension (\textit{Capitalization factor}), see section \ref{sec:pcfa} below---we state, for each outcome variable, the expected direction and transmission mechanism for each factor separately, distinguishing short-run from medium-to-long-run dynamics where appropriate.
+
+\begin{testable}[GDP Growth]\label{test:gdp}
+
+\textcolor{red}{[TODO: Develop testable predictions for GDP growth and its components. Key channels: (i)~\textit{Age factor}: higher labour supply raises productive capacity (supply channel) while higher labour income sustains aggregate demand (demand channel), both operating positively on output; short-run effect driven by demand, medium-to-long-run effect by supply expansion. (ii)~\textit{Capitalization factor}: short-run GDP contraction due to demand compression from higher forced saving; medium-to-long-run recovery as higher capital accumulation raises productive capacity. Relate to potential GDP and GDP per worker as supply-side indicators.]}
+
+\end{testable}
+
+\begin{testable}[Employment rate of workers aged 55--64]\label{test:emp_old}
+
+\textit{Age factor.} %TG: Raising the retirement age directly affects older workers' participation in the labor market by delaying their exit from employment.\footnote{In France, several studies have examined the effects of various measures aimed at increasing the retirement age since the 2000s. Empirical evidence shows a significant increase in the employment rate of individuals close to retirement age, but also a temporary rise in unemployment, disability, and inactivity \citep{Rabate2020,Dubois2016,Leduigou2016}. These developments mainly reflect persistence in individuals' prior labor market status: when the retirement age is raised, those who would have claimed their pension remain employed for longer, while those already unemployed or inactive tend to stay in that status.} Raising the statutory retirement age directly delays workers' exit from the labor market, mechanically extending the period during which individuals aged 55--64 remain active. The income effect channel reinforces this: workers who face reduced or postponed pension entitlements have a stronger incentive to remain in employment to maintain their lifetime income.
+%TG: (note: current disposable income actually increases for those who remain employed, as labor income exceeds the pension replacement rate).
+The effect on the labor force participation rate of the 55--64 age group is expected to be \textbf{positive}, as documented by \citet{StaubliZweimuller2013} and confirmed by simulation evidence in \citet{GruberWise1999}. This positive effect may, however, be accompanied by a transitory rise in unemployment or inactivity among individuals who were already outside employment before the reform, reflecting persistence in labor market status rather than an immediate adjustment.
+
+The magnitude and net sign of the effect may also depend on the implementation horizon. When reforms are announced with long phase-in periods, the fiscal foresight and uncertainty channels identified by \citet{BiZubairy2023} can temporarily reverse the income effect, causing workers close to retirement to exit early in order to lock in pre-reform benefits. The predicted sign is therefore \textbf{unambiguously positive} for reforms implemented without lag or with short lags, and \textbf{ambiguous to negative in the short run} for reforms with long phase-in periods.
+
+\textit{Capitalization factor.} Reforms that shift pension financing toward private, funded schemes have a less direct effect on the employment rate of older workers. Their primary impact operates through wealth and income effects: if workers perceive the transition as implying lower expected replacement rates, they may choose to extend their working lives voluntarily to compensate---generating a \textbf{positive} effect on participation. However, this response is likely to be weaker and more gradual than for Age reforms, as it does not involve a direct change in the statutory exit date. The effect is therefore expected to be \textbf{mildly positive at best, and ambiguous otherwise}, depending on the perceived adequacy of accumulated private savings.
+\end{testable}
+
+\begin{testable}[Aggregate employment rate]\label{test:emp_agg}
+
+\textit{Age factor.} The positive effect on the labor force participation rate of the 55--64 group identified in Prediction~\ref{test:emp_old} transmits to the aggregate employment rate, provided it does not come at the expense of younger workers. As discussed previously, the available evidence does not support crowding-out: \citet{BiZubairy2023} find no significant impact on the labor force participation rate of workers aged 20--49, while \citet{MunnellWu2012} and \citet{Dai2022} show that young and old workers are more likely to be complements than substitutes in production. We therefore predict a \textbf{positive} aggregate employment effect in the medium to long run. In the short run, and for reforms with long announcement lags, the effect is \textbf{ambiguous}, for the reasons developed in Prediction~\ref{test:emp_old}.
+
+\textit{Capitalization factor.} Reforms increasing the share of private pension financing are less likely to generate a significant aggregate employment effect in the short run. Their labor market impact is mainly indirect, operating through savings and wealth accumulation dynamics. Over longer horizons, if higher private savings translate into greater capital accumulation and investment, the resulting increase in productive capacity may support labor demand and employment. The expected effect is therefore \textbf{neutral to mildly positive in the long run}, and \textbf{negligible in the short run}.
+\end{testable}
+
+
+
+\begin{testable}[Private consumption]\label{test:conso}
+
+\textit{Age factor.} %TG: Il me semble que la consommation doit plut\^{o}t augmenter~: plus de gens qui travaillent relativement, donc plus de gens qui consomment (et qui ont un revenu plus important par rapport au revenu de remplacement). 
+
+An increase in the statutory retirement age is expected to \textbf{raise} aggregate private consumption in the short run, through a labor income channel that dominates the standard wealth effect. When workers remain employed longer, they continue to earn labor income---which, for most individuals close to retirement, substantially exceeds the pension benefits they would have received. The substitution of labor income for pension transfers therefore raises current disposable income and supports consumption. This mechanism is consistent with \citet{KaramMuirPereiraTuladhar2010}, who find that retirement age reforms boost short-run consumption through the demand effect of higher lifetime labor income, and with the empirical evidence in \citet{RomerRomer2016}, who document that social security benefit increases generate significant but transitory consumption rises---implying, by symmetry, that benefit reductions through delayed retirement generate consumption increases when labor income is the substitute.
+
+In the medium-to-long run, the consumption effect depends on whether the reform is perceived as a permanent reduction in pension generosity. If so, households may partially smooth consumption by increasing their savings rate, tempering the positive short-run demand effect. The net medium-run prediction remains \textbf{positive but diminishing} relative to the short run.
+
+\textit{Capitalization factor.} Reforms shifting pension financing toward private, funded pillars operate primarily through a wealth effect and an uncertainty channel. On the one hand, workers contributing to private pension accounts accumulate financial assets, which can support consumption in retirement---potentially raising permanent income expectations and current consumption. On the other hand, the transition generates uncertainty about future replacement rates, particularly for lower-income households with limited financial literacy or capital market access, which may induce precautionary saving and depress consumption. The net effect is therefore \textbf{ambiguous in the short run}: positive for households that perceive private savings as a reliable substitute for public benefits, negative for those that increase precautionary saving in response to uncertainty. In the long run, if private pension systems achieve high returns and broad coverage, the consumption effect may turn \textbf{mildly positive}.
+
+\textcolor{red}{[TODO SAVINGS: Add a dedicated paragraph on the predicted response of the household saving rate and national savings. Key prediction: (i)~\textit{Age factor}: workers anticipating lower future pension entitlements raise their saving rate over time (life-cycle smoothing), so the saving rate increases in the medium run even as current consumption rises in the short run; (ii)~\textit{Capitalization factor}: the mandatory redirection of contributions to private accounts directly raises the private saving rate, with a persistent and quantitatively large effect on national savings.]}
+\end{testable}
+
+    
+                          \end{testable}
+
+ 
+\end{testable}
+
+  
+                             \textcolor{red}{[TODO: Develop testable predictions for the trade balance and current account. Key channels: (i)~\textit{Age factor}: expansion of domestic labor supply and productive capacity may raise exports; higher household income supports imports; net trade effect is ambiguous; (ii)~\textit{Capitalization factor}: higher private saving compresses domestic demand and imports, improving the current account through the saving-investment channel.]}
+
+\end{testable}
+
+\begin{testable}[Productivity]\label{test:prod}
+\textcolor{red}{[JH: I entitle thiss section ``Productivity'', and remained general about the mechanisms below, apply to both labor prod and TFP. But at some point, we will need to say we use both.]}
+
+\textit{Age factor.} The effect of raising the statutory retirement age on aggregate productivity is theoretically ambiguous, especially in the short run. The retention of older workers who would otherwise have exited the labor market may reduce average measured productivity if the marginal productivity of workers near retirement is below the workforce average. However, this effect is likely to be modest: the empirical literature does not identify a systematic negative relationship between workforce aging and productivity \citep{Dai2022}, and experience-based human capital may partially offset declining physical capacity at older ages. In the medium to long run, the composition effect stabilizes as the additional cohort of retained workers is progressively replaced by younger entrants, while the labor supply expansion may stimulate investment in labor-augmenting technology. The medium-to-long-run prediction is therefore \textbf{neutral to mildly positive}.
+
+\textit{Capitalization factor.} The effect of pension financing reforms on productivity operates through a different and more indirect channel: capital deepening. If private pension contributions increase the supply of investable funds and support greater accumulation of physical and human capital, the capital-labor ratio rises, which tends to raise productivity over time. This channel is well established theoretically and consistent with the broader literature on financial deepening and growth. The expected effect is therefore \textbf{positive in the long run}, though the adjustment is likely to be slow and dependent on the efficiency of capital markets. In the short run, the productivity effect is expected to be \textbf{negligible}, as capital accumulation takes time to translate into measurable productivity gains.
+\end{testable}
+
+
+
+\section{Pension Reforms Database}\label{sec:data}
+
+We construct a new database documenting pension reforms across 17 OECD countries over the 1980--2025 period. Following the literature on macroeconomic fiscal policy shocks, we adopt a narrative approach \citep{Ramey2009, RomerRomer2010} specifically to identify pension policy changes \citep{Beetsma2020, BiZubairy2023, romp_political_2024}. This method allows to disentangle structural reforms from cyclical economic fluctuations, ensuring the identification of exogenous shocks.
+
+The main contribution of this database lies in its ability to capture the dynamic, year-by-year trajectory of pension reform implementation, which addresses two major limitations in the literature.
+First, while existing datasets focus primarily on the voting year of reforms, they offer limited insight into actual implementation timelines. In practice, pension reform implementation can be subject to substantial delays, as structural reforms typically entail extended phase-in periods. In line with the growing emphasis in recent literature on the importance of these phase-in periods \citep{BiZubairy2023, romp_political_2024}, tracking gradual reform timelines is central to our database design.
+Second, the widespread reliance on dummy variables in the literature fails to capture the intensity of pension policy changes. A binary indicator cannot differentiate between a major structural shock—such as a five-year increase in the retirement age—and a less drastic adjustment like an additional quarter of required contributions to access early retirement. To accurately reflect real-world institutional modifications, our database records the precise gradual changes implemented each year across six core policy instruments: statutory normal retirement age, statutory retirement ages for women  (when distinct from men), required contribution periods, early retirement age limits, early retirement contribution requirements, and private pension contribution rates. Combined with the initial vote year, this granular approach delivers a highly precise measurement of both the timing and magnitude of pension shocks, also making possible to account for potential anticipation effects by economic agents. Nevertheless, the database provides the flexibility to use standard dummy variables to complement the results.
+
+
+\subsection{Sample}
+The present database covers 17 OECD countries from 1980 to 2025, including: Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Italy, Japan, the Netherlands, New Zealand, Portugal, Spain, Sweden, the UK, and the US. This sample provides substantial geographical diversity and encompasses a wide range of pension systems—from traditional pay-as-you-go (PAYG) schemes to systems with a central private pillar. This institutional variety is reflected in the different policy levers countries choose to activate. While some governments primarily rely on raising the statutory retirement age, others focus on extending required contribution periods, tightening early retirement schemes or opt for a private system. By capturing all of these dimensions simultaneously, our database offers a comprehensive view of how different nations restructure their pension systems.
+
+
+\subsection{Sources}
+
+This dataset compiles data from two main sources: \citet{BiZubairy2023} and \citet{romp_political_2024}, supplemented by country-specific official documents for additional details.
+
+The first dataset, from \citet{BiZubairy2023}, documents public pension reforms across ten OECD countries over the 1962–2017 period (Australia, Japan, Italy, New Zealand, the UK, Spain, Belgium, France, Finland, and Denmark). Their framework primarily relies on country-specific annual and bi-annual OECD Economic Surveys. Specifically, they categorize pension changes across four main dimensions: (i) the sign of the reform, positive for a generous policy change (e.g., a decrease in the legal retirement age) and negative if it removes benefits (e.g., less advantageous indexation); (ii) the specific policy tools utilized, such as benefit formulas, coverage, indexation, or retirement age; (iii) the underlying motivation, distinguishing short-run cyclical or purchasing power considerations from long-run structural drivers; and (iv) the implementation lags between the initial vote year and the full execution year. The high level of detail in this comprehensive database allows us to trace reform events with precision. Specifically, by separating long-run structural reforms from short-run adjustments, their framework provides the ideal narrative foundation to understand and isolate the specific policy shocks that we quantify in our own dataset.
+
+Focusing on structural reforms, Bi and Zubairy (\citeyear{BiZubairy2023}) examine the behavioral responses of older workers nearing retirement to two distinct types of structural pension reforms: those implemented immediately versus those with phased-in schedules. Their empirical findings suggest that implementation lags significantly undermine the intended fiscal goals of these reforms. Specifically, a restrictive pension reform fails to reduce public old-age spending for long phased-in period reforms. This counterproductive outcome is driven by a sharp decline in the labor force participation rate among near-retirement individuals, who exit the workforce early due to anticipation effects.
+
+
+The second dataset, constructed by \citet{romp_political_2024}, covers pension reforms encompassing 23 OECD countries over the 1970–2023 period. Their framework extends the dataset developed by \citet{Beetsma2020} and expands its scope to include adjustments to occupational funded schemes. The database compiles data from \citet{BiZubairy2023} and pools content from various institutional sources, including NATLEX, ISSA, LABREF, the OECD, and ad-hoc reports. By combining narrative identification with automated text filters, the resulting dataset isolates 1,828 reform packages, providing: (i) the directional nature of the policy, distinguishing between expanding, contracting, or unclear adjustments; (ii) age-related criteria and, where available, the reported length of phase-in periods; and (iii) qualitative descriptive details on the specific provisions of each reform. This database is particularly valuable for our analysis as it compiles a wide range of institutional sources and provides extensive information on each reform. It offers a clear understanding of the policy mechanisms, offering an ideal qualitative foundation to structure the data according to our research design.
+
+Using this dataset, \citet{romp_political_2024} investigates the determinants of the phase-in periods of pension reforms. His findings indicate that the directional nature of the policy is the key factor: contracting reforms, which reduce the generosity of the system, feature significantly longer transition periods—averaging about 4.8 additional years—to facilitate political acceptability. Conversely, the author finds no statistically significant relationship between the intensity of population aging or the economic cycle and the length of these implementation phases.
+
+
+\subsection{Methodology}
+
+Our database focuses on major pension reforms, defined as policy changes that are structural in nature, affect a broad segment of the population, or exert a substantial influence on public old-age expenditures. This approach ensures that our dataset captures relevant shocks, providing a robust basis for the local projections. The dataset organizes these reforms into three broad categories.
+
+The first category encompasses 'time variables,' defined as quantitative, structural indicators tracking the precise year-by-year timeline of reform implementation across five distinct instruments, each expressed in years: (i) the statutory normal retirement age, (ii) the normal retirement age for women (when distinct from men), (iii) the mandatory contribution period required for a full pension, (iv) the earliest eligibility age for the main early retirement scheme, and (v) the minimum qualifying contribution period required to access this early retirement scheme. Because these five variables are uniformly measured in years, they are fully harmonized for joint empirical estimation; for instance, summing their first differences allows for the construction of a comprehensive, aggregate index of public pension shocks. This continuous measure captures the precise magnitude and intensity of the policy changes, offering a more granular identification of shocks than a traditional binary dummy.
+
+
+The second category includes a private pillar variable that captures the mandatory or highly incentivized savings rate within private pension funds, expressed as a percentage of gross earnings. This variable concerns five countries (Australia, Germany, New Zealand, Sweden, and the UK) where the state directly legislates, mandates, or subsidizes these target savings rates. Together, these six quantitative metrics define the core of major structural pension policies in our sample.
+
+
+In addition to these precise quantitative variables, we construct two corresponding baseline dummy variables associated with the initial year of implementation. This dual approach enables us to test alternative empirical specifications and assess the robustness of our results. The restriction dummy ($dum\_res$) equals one in the first year a contracting reform is implemented, defined as a policy change aimed at reducing public pension expenditure, such as increases in retirement ages or contribution requirements. Conversely, the expansion dummy ($dum\_exp$) equals one in the first year a generous policy change takes effect, such as a reduction in age thresholds or contribution periods.
+
+
+Then, each quantitative policy shift is labeled with the official name of the reform or reform package in its first year of implementation, accompanied by a precise detail of the measures drawn from the underlying source. For reforms sourced from \citet{romp_political_2024}, the original primary source is explicitly cited. Furthermore, all methodological choices are explicitly documented to justify every variation across our six primary variables. By design, our dataset strictly tracks the actual trajectory of implementation schedules. However, when granular details regarding the transition timeline are missing—for instance, if a reform stipulates a three-year age increase over a six-year period without further information—we apply a linear interpolation approach to compute the annual adjustments toward the final policy target.
+
+
+The third category includes two additional dummy variables designed to control for significant yet non-structural reforms, whose metrics are not directly comparable to the quantitative indicators measured in years. Alongside these dummy variables, the dataset provides a detailed description of the reform's content, and its precise source. Specifically, we classify these adjustments across five main policy dimensions: (i) payment modifications (direct transfers, income or asset testing, pension amounts, bonuses, and benefit formulas); (ii) coverage shifts (variations in the population segments or sectors affected); (iii) secondary age rules (age changes for specific subgroups, such as public-private sector distinctions); (iv) indexation mechanisms; and (v) country-specific features (partial retirement schemes, public sector specificities, special regime frameworks, or alternative early retirement guidelines deviating from the primary national system).
+
+
+Finally, the database systematically incorporates the voting date of each reform. Documenting both the voting year and the initial or full implementation year allows for the calculation of precise implementation lags and phase-in periods. Measuring this temporal gap makes it possible to account for potential anticipation effects by economic agents facing delayed or phased-in pension shocks.
+
+
+
+%\newpage
+
+%\textcolor{red}{[TODO: Description of the cross-country dataset: X countries, 1980--20XX period. List of variables: statutory retirement age, retirement age for women, early retirement age, contribution duration, contribution rate to private pension pillars. Details on data sources and collection procedure (especially variables extracted from administrative documents or institutional reports). Footnote on data acknowledgements.]}
+
+\section{Empirics}
+
+\subsection{Characterizing Pension Reforms: A Factor Analysis Approach}
+\label{sec:pcfa}
+
+Pension systems are inherently multidimensional. Key policy parameters---such as statutory retirement age, early retirement provisions, contribution duration, or the balance between public and private financing---tend to be highly correlated and often evolve jointly as part of broader reform packages. This creates two main challenges for empirical analysis. On the one hand, including multiple indicators simultaneously in regression models may lead to multicollinearity, making coefficient estimates unstable and difficult to interpret. On the other hand, focusing on individual indicators risks overlooking the fact that important reforms are typically bundled, reflecting underlying policy orientations rather than isolated changes.
+
+To address these issues, we rely on a principal-component factor analysis (PCFA), a dimensionality reduction technique that summarizes the common variation across correlated variables into a smaller set of orthogonal factors. The key idea is to extract latent dimensions that capture the main lines along which pension systems differ. This approach offers two main advantages: (i)~it reduces the dimensionality of the problem while preserving most of the information in the data, and (ii)~it yields composite indicators that can be more meaningfully interpreted as underlying policy regimes. In the context of pension reforms, the PCFA allows us to move from a set of fragmented policy measures to a more structural characterization of reforms, such as changes in the timing of retirement or shifts in the financing structure of pension systems. Note also that, unlike standard PCA, factor analysis directly determines the number of retained factors, making the selection of dimensions less arbitrary.
+
+%\textcolor{red}{[TODO: Narrative on why these variables relate only to structural reforms and not to cyclical/conjunctural adjustments (e.g.\ no indexation rules). This is key to defusing endogeneity criticism. Possible additional arguments: (i)~pension reforms are politically costly and therefore infrequent; (ii)~their implementation takes time, limiting reverse causality. Consider running Granger causality tests following \citet{BiZubairy2023}.]}
+
+%XXX \textcolor{red}{[JH: The narrative on endogeneity has been written. Granger causality tests following \citet{BiZubairy2023} remain to be done]}
+
+While the above set of variables cannot be considered highly endogenous---as they relate to structural, long-term features of pension systems---they cannot be regarded as fully exogenous to macroeconomic conditions either. One cannot rule out that, over longer time horizons, these variables are jointly influenced by macroeconomic developments, in particular GDP growth. Pension reforms are often state-dependent, with periods of low economic growth or fiscal stress triggering parametric adjustments (e.g.\ increases in retirement age or contribution requirements), while periods of stronger growth may relax reform pressures. As a result, these variables may exhibit significant co-movement driven not by underlying institutional similarities, but by their shared exposure to the business cycle. Applying a standard PCFA directly to these variables would therefore risk identifying components that primarily capture macroeconomic fluctuations, rather than the structural features of pension systems that are of primary interest in this paper.
+
+To address this issue, we implement a conditional PCFA---also known as partial PCA or PCA on residuals (\citealp{Boone2020}) ---whereby the effect of a third variable is first removed from each variable of interest prior to dimensionality reduction. We therefore orthogonalize the variables with respect to real GDP growth by removing its linear effect. This approach ensures that the extracted factors capture the joint variation across pension variables \emph{net} of macroeconomic conditions, and therefore reflect structural co-movements across pension system characteristics. In addition to mitigating the risk of spurious correlations arising from a common macroeconomic driver, this approach prevents the first principal component from being dominated by a single aggregate factor such as economic growth. Furthermore, it enables more meaningful cross-country and intertemporal comparisons, as observations are effectively evaluated conditional on a given macroeconomic environment.
+
+The results are reported in Tables~\ref{tab:pcfa_unrot}--\ref{tab:pcfa_loadings}. The two retained factors have eigenvalues of 2.07 and 1.58 (unrotated) and explain approximately 73\% of the total variance jointly (Table~\ref{tab:pcfa_rot}). The likelihood ratio test strongly rejects the null hypothesis of independence ($\chi^2(10) = 1029.48$, $p < 0.001$), confirming the relevance of the factor structure.
+
+\begin{table}[h!]
+\centering
+\caption{Factor analysis (principal factors, unrotated)}
+\label{tab:pcfa_unrot}
+\begin{tabular}{lcccc}
+\hline\hline
+Factor & Eigenvalue & Difference & Proportion & Cumulative \\
+\hline
+Factor 1 & 2.073 & 0.488 & 0.415 & 0.415 \\
+Factor 2 & 1.584 & 0.949 & 0.317 & 0.731 \\
+Factor 3 & 0.635 & 0.224 & 0.127 & 0.859 \\
+Factor 4 & 0.412 & 0.116 & 0.082 & 0.941 \\
+Factor 5 & 0.296 & ---   & 0.059 & 1.000 \\
+\hline
+\multicolumn{5}{l}{\scriptsize LR test (independent vs.\ saturated): $\chi^2(10) = 1029.48$, $p < 0.001$} \\
+\hline\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\caption{Factor analysis (principal factors, rotated: orthogonal varimax)}
+\label{tab:pcfa_rot}
+\begin{tabular}{lcccc}
+\hline\hline
+Factor & Eigenvalue & Difference & Proportion & Cumulative \\
+\hline
+Factor 1 & 2.017 & 0.378 & 0.404 & 0.404 \\
+Factor 2 & 1.640 & ---   & 0.328 & 0.731 \\
+\hline
+\multicolumn{5}{l}{\scriptsize LR test (independent vs.\ saturated): $\chi^2(10) = 1029.48$, $p < 0.001$} \\
+\hline\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\caption{Rotated factor loadings (pattern matrix) and unique variances}
+\label{tab:pcfa_loadings}
+\begin{tabular}{lccc}
+\hline\hline
+Variable & Factor 1 & Factor 2 & Uniqueness \\
+\hline
+Statutory retirement age      &  0.902 & $-$0.024 & 0.186 \\
+Retirement age (women)        &  0.902 & $-$0.043 & 0.185 \\
+Early retirement age          &  0.573 &   0.630  & 0.275 \\
+Contribution duration         &  0.062 &   0.770  & 0.403 \\
+Private pension contribution  &  0.241 & $-$0.804 & 0.295 \\
+\hline\hline
+\end{tabular}
+\end{table}
+
+The first factor displays strong and positive loadings on the statutory retirement age (0.902) and the retirement age for women (0.902), and to a lesser extent on the early retirement age (0.573). Private pension contributions play a more moderate role (0.241), while contribution duration has virtually no influence on this dimension. This pattern clearly identifies the first factor as capturing a \emph{retirement timing} dimension. It reflects the overall level at which individuals exit the labor market, encompassing both standard and early retirement pathways. Countries or periods with higher values of this factor are characterized by systematically later retirement ages, and changes in this factor over time correspond to pension reforms that delay retirement.
+
+The second factor exhibits a markedly different structure. It loads strongly and negatively on private pension contributions ($-0.804$) and positively on contribution duration (0.770) and early retirement age (0.630), while the statutory retirement age variables play virtually no role. This configuration captures an \emph{institutional financing structure} dimension, opposing systems that rely more heavily on private, funded schemes to those characterized by longer mandatory contribution periods within public, pay-as-you-go systems. For ease of interpretation, we reverse the sign of the second factor so that higher values correspond to greater pension system privatization/capitalization.
+
+Building on the above, we define pension reforms as changes in countries' factor scores over time. Pension reforms can thus be meaningfully decomposed into two orthogonal dimensions: (i)~reforms affecting the timing of retirement (\textit{Age} factor), and (ii)~reforms altering the structure of pension financing (\textit{Capitalization} factor).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.60\textwidth]{figures/pension_reforms.png}
+\caption{Pension reforms}
+\label{fig:pension_reforms}
+\vspace{2pt}\begin{minipage}{\linewidth}{\scriptsize\setstretch{0.85}\justifying\textit{Notes:} \textcolor{red}{[TODO: notes to be completed.]}}\end{minipage}
+\end{figure}
+
+\textcolor{red}{[TODO: Note on rescaling. The factors are rescaled so that a one-unit change corresponds respectively to a reform increasing the statutory retirement age by one year, and to a one-percentage-point increase in the contribution rate to private pension pillars.]}
+
+\textcolor{red}{[TODO: Robustness --- Add voting\_year as an anticipation control.]}
+
+\subsection{Empirical Model}
+\label{sec:model}
+%XXX HERE 
+We estimate the dynamic effects of pension reforms on macroeconomic outcomes using the local projection method of \citet{Jorda2005}. For each outcome variable $y$ and horizon $h = 0, 1, \ldots, H$, we estimate:
+
+\begin{equation}
+\label{eq:lp}
+y_{i,t+h} - y_{i,t-1} = \alpha_{i,h} + \gamma_{t,h} + \beta^{\text{Age}}_h \, \Delta F^{\text{Age}}_{i,t} + \beta^{\text{Cap}}_h \, \Delta F^{\text{Cap}}_{i,t} + \mathbf{X}_{i,t}' \boldsymbol{\delta}_h + \varepsilon_{i,t+h}
+\end{equation}
+
+\noindent where $y_{i,t}$ represent one of the macroeconomic outcomes enumerated in the testable relationships (section\ref{sec:TR}) for country $i$ and year $t$; $\Delta F^{\text{Age}}_{i,t}$ and $\Delta F^{\text{Cap}}_{i,t}$ denote annual changes in the \textit{Age} and \textit{Capitalization} factor scores for country $i$ at time $t$, $\alpha_{i,h}$ and $\gamma_{t,h}$ are horizon-specific country and year fixed effects, and $\mathbf{X}_{i,t}$ is a vector of controls including one lag of the dependent variable, contemporaneous values and three lags of the old-age dependency ratio, the unemployment rate, the alternative factor, and a crisis dummy. Inference is based on bootstrapped standard errors (100 replications), clustered at the country level.\textcolor{red}{[JH: We need at least 50 clusters for clustering to deliver correct standard errors. We don't have that many countries here. Consider clustering at the country-year level.]}
+
+The sequence of estimated coefficients $\{\hat{\beta}^{\text{Age}}_h\}_{h=0}^{H}$ and $\{\hat{\beta}^{\text{Cap}}_h\}_{h=0}^{H}$ traces the cumulative impulse response functions to each reform dimension. Although the conditional PCFA removes the common business-cycle variation that drives co-movement across pension system variables, some endogeneity concerns remain. We address them on three grounds. First, and most importantly, structural pension reforms are characterised by long implementation lags --- averaging close to a decade in \citet{BiZubairy2023} --- which mechanically limits the scope for reverse causality: macroeconomic outcomes at horizon
+$h$ cannot plausibly cause reforms announced several years prior. Second, structural pension reforms are politically costly and tend to be driven by long-run demographic and fiscal sustainability concerns rather than short-run macroeconomic conditions, a point formally validated by the Granger causality tests in \citet{BiZubairy2023}, who show that their structural reform measures are not predicted by lagged GDP growth, inflation, or unemployment. Third, the conditional PCFA orthogonalises our reform measures with respect to real GDP growth prior to estimation, ensuring that the extracted factors capture structural co-movements in pension systems net of the business cycle. 
+
+%\textcolor{red}{[DONE: Develop the endogeneity argument more fully. Key points: (i)~the conditional PCFA already removes business-cycle variation; (ii)~structural reforms are politically costly and infrequent; (iii)~long implementation lags limit reverse causality. ]}
+
+\textcolor{red}{[TODO: Consider Granger causality tests.]}
+
+\section{Results}
+\label{sec:results}
+%JH: HERE
+
+\FloatBarrier
+\subsection{Labor market outcomes}
+\label{sec:labor}
+\label{sec:labor}
+
+\begin{figure}[htbp]
+\centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/lfpr_older.png}
+    \caption{Older workers LFPR (55--64)}
+    \label{fig:lfpr_older}
+  \end{subfigure} \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/lfpr_total.png}
+    \caption{Total labor force participation rate}
+    \label{fig:lfpr_total}
+  \end{subfigure}
+  \vspace{0.5em}
+  \begin{subfigure}[b]{0.6\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/unemployment.png}
+    \caption{Unemployment rate}
+    \label{fig:unemployment}
+  \end{subfigure}
+  \caption{Cumulative responses to pension reforms: labor market outcomes}
+  \label{fig:fig_labor}
+  \vspace{2pt}\begin{minipage}{\linewidth}{\scriptsize\setstretch{0.85}\justifying\textit{Notes:} The dependent variable is the cumulative change in labor market outcomes---relative to $t{-}1$. Responses to \textit{Age} (resp.\ \textit{Capitalization}) reforms are normalized to a one-year increase in the statutory retirement age (resp.\ a one-percentage-point increase in the contribution rate to private pension pillars). The specification includes one lag of the dependent variable, contemporaneous values, and three lags of the old-age dependency ratio, the unemployment rate, the alternative factor, and a crisis dummy, along with horizon-specific country and year fixed effects. Inference is based on bootstrapped standard errors (100~replications), clustered at the country level. Wald test statistics for joint significance and $p$-values are reported below each chart. Darker (lighter) shaded areas indicate 68\% (95\%) pointwise confidence intervals.}\end{minipage}
+\end{figure}
+
+Figure~\ref{fig:fig_labor} presents the labor market responses. The \textit{Age} reform produces, as predicted, a large and statistically robust increase in the labor force participation rate of workers aged 55--64 (panel~a). The response is significant within both the 68\% and 95\% confidence bands from horizon~1 onward, reaches a peak of approximately $+$2.5 percentage points around horizon~5--6, and remains elevated throughout the ten-year window. This result aligns closely with Testable Prediction~\ref{test:emp_old} and is consistent with the large related literature \citep{StaubliZweimuller2013,GruberWise1999}: by raising the statutory retirement age, the reform mechanically extends the period of labor market attachment and strengthens the income motive to remain employed. The aggregate labor force participation rate (panel~b) also rises, though the effect is more moderate (approximately $+$0.5~pp at the peak, significant at 68\%), consistent with the absence of crowding-out documented in the literature \citep{MunnellWu2012,Dai2022}: older workers remaining in the labor market do not displace younger cohorts. The unemployment rate response (panel~c) is positive in the short run ($+$0.1--0.2~pp, marginally significant at 68\% up to horizon~3), reflecting the transition dynamics noted in Prediction~\ref{test:emp_old}: some workers who would have retired instead become or remain unemployed. 
+
+A further implication of Prediction~\ref{test:emp_old}, drawing on \citet{BiZubairy2023}, was that the sign of the Age reform's effect on older workers' participation could be ambiguous or even negative in the short run for reforms announced with long phase-in periods, due to the fiscal foresight and uncertainty channels. The finding that the LFPR response is \emph{positive from horizon~1 onward} is therefore itself informative: it indicates that, in our sample, the structural pension reforms captured by the Age factor were perceived by workers as reforms with relatively short or no phase-in periods, or---equivalently---that the income effect dominated the foresight channel. This is consistent with the nature of the reforms contributing most to the Age factor (statutory retirement age increases applied without extended transition periods), and it corroborates the exogeneity argument developed in Section~\ref{sec:pcfa}: the reforms we identify are structural in motivation and do not exhibit the very long implementation lags that \citet{BiZubairy2023} associate with LFPR declines.
+
+The \textit{Capitalization} reform has markedly different labor market effects. The LFPR of older workers shows no significant response (panel~a), consistent with Prediction~\ref{test:emp_old}, which anticipated a weak and ambiguous effect of financing-structure reforms on retirement timing. Similarly, the aggregate participation rate is essentially unaffected (panel~b). The unemployment rate, however, rises modestly but significantly over horizons~2--5 (panel~c, approximately $+$0.15--0.2~pp at 68\%). This mild increase was not explicitly predicted for the Capitalization reform, which was expected to have negligible short-run labor market effects. A plausible interpretation is that the transition toward funded private accounts generates uncertainty about future replacement rates---particularly for lower-income workers who may lack the financial literacy or assets to substitute private saving for public pension entitlements---inducing some workers to exit employment in anticipation of a less generous public system. This mechanism is consistent with the uncertainty channel of \citet{BiZubairy2023}, even though that channel was originally developed in the context of retirement age reforms with long lags. Overall, the labor market results are strongly supportive of the theoretically-based testable implications: the \textit{Age} reform operates through a direct labor supply channel, while the \textit{Capitalization} reform has limited direct employment effects.
+
+\FloatBarrier
+\subsection{GDP and productive capacity}
+\label{sec:gdp}
+\label{sec:gdp}
+
+\begin{figure}[htbp]
+\centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/gdp_usd.png}
+    \caption{GDP (constant USD)}
+    \label{fig:gdp_usd}
+  \end{subfigure} \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/potential_gdp_usd.png}
+    \caption{Potential GDP (constant USD)}
+    \label{fig:potential_gdp_usd}
+  \end{subfigure}
+
+  \caption{Cumulative responses to pension reforms: GDP and productive capacity}
+  \label{fig:fig_gdp}
+  \vspace{2pt}\begin{minipage}{\linewidth}{\scriptsize\setstretch{0.85}\justifying\textit{Notes:} The dependent variable is the cumulative change in GDP and productive capacity---relative to $t{-}1$. Responses to \textit{Age} (resp.\ \textit{Capitalization}) reforms are normalized to a one-year increase in the statutory retirement age (resp.\ a one-percentage-point increase in the contribution rate to private pension pillars). The specification includes one lag of the dependent variable, contemporaneous values, and three lags of the old-age dependency ratio, the unemployment rate, the alternative factor, and a crisis dummy, along with horizon-specific country and year fixed effects. Inference is based on bootstrapped standard errors (100~replications), clustered at the country level. Wald test statistics for joint significance and $p$-values are reported below each chart. Darker (lighter) shaded areas indicate 68\% (95\%) pointwise confidence intervals.}\end{minipage}
+\end{figure}
+
+Figure~\ref{fig:fig_gdp} reports the responses of both real and potential GDP. The \textit{Age} reform generates a positive and statistically significant increase in real GDP, which builds gradually over the first five years and stabilizes at approximately $+$1.5--2\% in levels by horizon~6--8, remaining significant within both the 68\% and 95\% confidence bands throughout (panel~a). The profile is consistent with a two-stage transmission mechanism. In the short run (horizons~1--3), the positive GDP response is primarily driven by the \emph{demand channel}: workers who remain employed instead of retiring earn labor income in excess of their pension replacement rate, which sustains private consumption (as documented in Section~\ref{sec:conso}) and therefore aggregate demand. In the medium to long run (horizons~4--10), the \emph{supply channel} takes over: the extension of older workers' labor market participation expands effective labor input, raises the economy's productive capacity, and generates output gains that are more structural in nature. This short-run-demand / medium-to-long-run-supply decomposition is consistent with the theoretical underpinnings: the short-run output gain is the general equilibrium counterpart of the consumption channel (Prediction~\ref{test:conso}, see section \ref{sec:conso} below) and the employment channel (Prediction~\ref{test:emp_old}), while the medium-run gain reflects the supply-side expansion anticipated across several predictions. These findings are consistent with the predicted effects on aggregate GDP and on its demand and supply components. The result is confirmed by the positive response of potential GDP (panel~b), indicating that the output gains are not purely cyclical. The response of potential GDP is broadly similar in shape, though slightly smaller (panel~b, $+$1--1.5\%), confirming that the output gain is not purely cyclical but reflects a genuine expansion of the economy's productive frontier.
+
+The \textit{Capitalization} reform has a markedly different and more contractionary profile. Real GDP responds negatively on impact and remains significantly negative throughout the entire ten-year window (panel~a), with the response averaging $-$0.06\%. There is no recovery within the estimation horizon. Potential GDP exhibits the same persistent contractionary pattern (panel~b), with an average response of $-$0.04\% and similarly strong significance. These results are at odds with the medium-run recovery anticipated in the theoretical framework: the diversion of contributions from consumption to private saving generates a \emph{demand contraction} (confirmed in Section~\ref{sec:conso}) that depresses both actual and potential output persistently, with no sign of the capital accumulation channel reversing the effect within ten years. This constitutes an important empirical finding: the standard prediction that pension privatization eventually raises productive capacity through higher savings and investment does not appear to materialise within the horizon covered by our analysis. This may reflect a longer transmission lag, a weak or incomplete capital market channel in our sample of countries, or structural features of the privatization reforms captured by the Capitalization factor.
+
+\FloatBarrier
+\subsection{Consumption and savings}
+\label{sec:conso}
+
+\begin{figure}[htbp]
+\centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/consumption_usd.png}
+    \caption{Consumption (constant USD)}
+    \label{fig:consumption_usd}
+  \end{subfigure} \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/consumption_gdp.png}
+    \caption{Consumption (\%GDP)}
+    \label{fig:consumption_gdp}
+  \end{subfigure}
+  \caption{Cumulative responses to pension reforms: consumption}
+  \label{fig:fig_consumption}
+  \vspace{2pt}\begin{minipage}{\linewidth}{\scriptsize\setstretch{0.85}\justifying\textit{Notes:} The dependent variable is the cumulative change in consumption---relative to $t{-}1$. Responses to \textit{Age} (resp.\ \textit{Capitalization}) reforms are normalized to a one-year increase in the statutory retirement age (resp.\ a one-percentage-point increase in the contribution rate to private pension pillars). The specification includes one lag of the dependent variable, contemporaneous values, and three lags of the old-age dependency ratio, the unemployment rate, the alternative factor, and a crisis dummy, along with horizon-specific country and year fixed effects. Inference is based on bootstrapped standard errors (100~replications), clustered at the country level. Wald test statistics for joint significance and $p$-values are reported below each chart. Darker (lighter) shaded areas indicate 68\% (95\%) pointwise confidence intervals.}\end{minipage}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/dom_savings_gdp.png}
+    \caption{Gross domestic savings (\%GDP)}
+    \label{fig:dom_savings_gdp}
+  \end{subfigure} \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/dom_savings_usd.png}
+    \caption{Gross domestic savings (constant USD)}
+    \label{fig:dom_savings_usd}
+  \end{subfigure}
+  \vspace{0.5em}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/gross_savings_gdp.png}
+    \caption{Gross savings (\%GDP)}
+    \label{fig:gross_savings_gdp}
+  \end{subfigure} \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/gross_savings_usd.png}
+    \caption{Gross savings (constant USD)}
+    \label{fig:gross_savings_usd}
+  \end{subfigure}
+  \caption{Cumulative responses to pension reforms: savings}
+  \label{fig:fig_savings}
+  \vspace{2pt}\begin{minipage}{\linewidth}{\scriptsize\setstretch{0.85}\justifying\textit{Notes:} The dependent variable is the cumulative change in savings---relative to $t{-}1$. Responses to \textit{Age} (resp.\ \textit{Capitalization}) reforms are normalized to a one-year increase in the statutory retirement age (resp.\ a one-percentage-point increase in the contribution rate to private pension pillars). The specification includes one lag of the dependent variable, contemporaneous values, and three lags of the old-age dependency ratio, the unemployment rate, the alternative factor, and a crisis dummy, along with horizon-specific country and year fixed effects. Inference is based on bootstrapped standard errors (100~replications), clustered at the country level. Wald test statistics for joint significance and $p$-values are reported below each chart. Darker (lighter) shaded areas indicate 68\% (95\%) pointwise confidence intervals.}\end{minipage}
+\end{figure}
+
+Figure~\ref{fig:fig_consumption} reports the consumption responses. The \textit{Age} reform produces a positive and statistically significant increase in private consumption in absolute terms (panel~a, average $+$0.08\% in cumulative percent change, significant throughout). This result is in line with Testable Prediction~\ref{test:conso} and validates the labor income channel: workers who remain in employment instead of retiring continue to earn wages that substantially exceed their pension replacement income, thereby supporting aggregate consumption. As a share of GDP, however, consumption declines significantly (panel~b, average $-$1.4~pp), reflecting the fact that the reform raises GDP faster than it raises consumption --- the labor supply expansion generates output growth that outpaces the demand effect, compressing the consumption-to-GDP ratio. This is consistent with the supply-side character of the Age reform documented in Section~\ref{sec:gdp}.
+
+The \textit{Capitalization} reform generates the opposite pattern. Private consumption falls significantly in absolute terms across the entire ten-year window (panel~a, average $-$0.05\%, significant throughout), with no sign of recovery. As a share of GDP, however, consumption is \emph{positive} up to horizon~3--4 before reverting toward zero (panel~b, average $+$0.26~pp). This apparently paradoxical combination --- consumption falling in levels but rising as a share of GDP --- reflects the fact that the Capitalization reform compresses GDP proportionally more than it compresses consumption (as documented in Section~\ref{sec:gdp}), raising the consumption share mechanically. This pattern is consistent with the precautionary saving channel of Prediction~\ref{test:conso}: the redirection of contributions toward private funded accounts depresses consumption in absolute terms, while the simultaneous GDP contraction more than offsets this effect on the consumption ratio.
+
+Figure~\ref{fig:fig_savings} reports the savings responses, which provide the natural counterpart to the consumption results.
+
+For the \textit{Age} reform, gross domestic savings rise positively and significantly in both levels and as a share of GDP. In levels (panel~b), the response is positive, growing, and significant throughout the window, with an average of $+$0.10\% . As a share of GDP (panel~a), savings also rise, with an average of $+$0.01$~$pp, though the response is only marginally significant at 68\% and the magnitude is modest. Gross savings tell the same story (panels~c--d): significant positive response in levels (average $+$0.10\%) and as a share of GDP (average $+$0.01$~$pp). Overall, the medium-to-long-run increase in savings as a share of GDP (mirroring the decrease of consumption as a share of GDP) is consistent with anticipations of a permanent reduction in future pension entitlements by households.
+
+For the \textit{Capitalization} reform, the savings picture is more contrasted. In levels, gross domestic savings fall significantly throughout the window (panel~b, average $-$0.06\%), mirroring the GDP contraction documented in Section~\ref{sec:gdp}: lower output mechanically reduces savings in absolute terms. As a share of GDP, however, gross domestic savings are essentially zero on average but decline significantly over horizons~0--6 before reverting toward zero (panel~a, average $-$0.00$~$pp). Gross savings in levels show the same pattern as domestic savings (panel~d, average $-$0.06\%), while gross savings as a share of GDP are not jointly significant (panel~c). Taken together, these results suggest that the Capitalization reform does not generate the expected increase in national saving rates: the decline in absolute savings simply tracks the GDP contraction, and the saving rate is essentially unchanged. This constitutes a divergence from the theoretical prediction, which anticipated that the mandatory redirection of contributions toward private accounts would raise the national saving rate persistently.
+
+
+
+\FloatBarrier
+\subsection{Investment}
+\label{sec:invest}
+\label{sec:invest}
+
+\begin{figure}[htbp]
+\centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/investment_usd.png}
+    \caption{Investment (constant USD)}
+    \label{fig:investment_usd}
+  \end{subfigure} \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/investment_gdp.png}
+    \caption{Investment (\%GDP)}
+    \label{fig:investment_gdp}
+  \end{subfigure}
+  \vspace{0.5em}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/fixed_investment_usd.png}
+    \caption{Fixed investment (constant USD)}
+    \label{fig:fixed_investment_usd}
+  \end{subfigure} \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/fixed_investment_gdp.png}
+    \caption{Fixed investment (\%GDP)}
+    \label{fig:fixed_investment_gdp}
+  \end{subfigure}
+  \caption{Cumulative responses to pension reforms: investment}
+  \label{fig:fig_investment}
+  \vspace{2pt}\begin{minipage}{\linewidth}{\scriptsize\setstretch{0.85}\justifying\textit{Notes:} The dependent variable is the cumulative change in investment---relative to $t{-}1$. Responses to \textit{Age} (resp.\ \textit{Capitalization}) reforms are normalized to a one-year increase in the statutory retirement age (resp.\ a one-percentage-point increase in the contribution rate to private pension pillars). The specification includes one lag of the dependent variable, contemporaneous values, and three lags of the old-age dependency ratio, the unemployment rate, the alternative factor, and a crisis dummy, along with horizon-specific country and year fixed effects. Inference is based on bootstrapped standard errors (100~replications), clustered at the country level. Wald test statistics for joint significance and $p$-values are reported below each chart. Darker (lighter) shaded areas indicate 68\% (95\%) pointwise confidence intervals.}\end{minipage}
+\end{figure}
+
+Figure~\ref{fig:fig_investment} reports the investment responses. The \textit{Age} reform produces a positive and growing response throughout the window. In levels (panel~a), investment rises from impact and is significant throughout, with an average of $+$0.11\%. As a share of GDP (panel~b), the response is also positive and significant, averaging $+$1.02$~$pp. Fixed investment (panels~c--d) tells the same story: average $+$0.11\% in levels and $+$0.88$~$pp as a share of GDP, both significant throughout the window. Notably, the positive response materialises from impact, without any short-run contraction. Prediction~\ref{test:invest} had left open the possibility of a neutral or negative short-run response if demand contracted before the fiscal consolidation channel took hold; the evidence rules this out. The profile is consistent with two medium-run channels: the fiscal consolidation documented in Section~\ref{sec:fiscal} reduces public borrowing and crowds in private investment, while the labour supply expansion raises the marginal product of capital, stimulating capital formation. Both channels build gradually, which explains the growing profile of the response.
+
+The \textit{Capitalization} reform, by contrast, generates a persistently negative investment response --- a result that stands again in sharp contrast to the theoretical prediction of a positive capital market channel. In levels (panel~a), investment falls throughout the window, with an average of $-$0.06\%, significant on the majority of horizons. As a share of GDP (panel~b), the response is negative and significant over horizons~0--7, before reverting toward zero, with an average of $-$0.42$~$pp. Fixed investment mirrors this pattern (panels~c--d): average $-$0.06\% in levels and $-$0.23$~$pp as a share of GDP, with a trough around h=4--5 before partial recovery. The standard prediction --- that private pension contributions flow into capital markets and stimulate investment --- does not materialise within our estimation window. Instead, the demand contraction induced by the Capitalization reform (documented in Section~\ref{sec:conso}) appears to dominate, depressing investment through a standard accelerator mechanism. Whether the capital market channel eventually prevails beyond the ten-year horizon covered here remains an open question, but within this window the Capitalization reform is unambiguously contractionary for investment.
+
+\FloatBarrier
+\subsection{Government debt and fiscal space}\label{sec:fiscal}
+
+\begin{figure}[htbp]
+\centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/pension_exp_gdp.png}
+    \caption{Public pension exp.\ (\%GDP)}
+    \label{fig:pension_exp_gdp}
+  \end{subfigure} \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/pension_exp_usd.png}
+    \caption{Public pension exp.\ (constant USD)}
+    \label{fig:pension_exp_usd}
+  \end{subfigure}
+  \vspace{0.5em}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/cg_exp_gdp.png}
+    \caption{Central gov.\ exp.\ (\%GDP)}
+    \label{fig:cg_exp_gdp}
+  \end{subfigure} \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/cg_exp_usd.png}
+    \caption{Central gov.\ exp.\ (constant USD)}
+    \label{fig:cg_exp_usd}
+  \end{subfigure}
+  \vspace{0.5em}
+  \begin{subfigure}[b]{0.6\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/gg_exp_usd.png}
+    \caption{General gov.\ exp.\ (constant USD)}
+    \label{fig:gg_exp_usd}
+  \end{subfigure}
+  \caption{Cumulative responses to pension reforms: pension and government expenditure}
+  \label{fig:fig_pension_exp}
+  \vspace{2pt}\begin{minipage}{\linewidth}{\scriptsize\setstretch{0.85}\justifying\textit{Notes:} The dependent variable is the cumulative change in pension and government expenditure---relative to $t{-}1$. Responses to \textit{Age} (resp.\ \textit{Capitalization}) reforms are normalized to a one-year increase in the statutory retirement age (resp.\ a one-percentage-point increase in the contribution rate to private pension pillars). The specification includes one lag of the dependent variable, contemporaneous values, and three lags of the old-age dependency ratio, the unemployment rate, the alternative factor, and a crisis dummy, along with horizon-specific country and year fixed effects. Inference is based on bootstrapped standard errors (100~replications), clustered at the country level. Wald test statistics for joint significance and $p$-values are reported below each chart. Darker (lighter) shaded areas indicate 68\% (95\%) pointwise confidence intervals.}\end{minipage}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/cg_debt_gdp.png}
+    \caption{Central gov.\ debt (\%GDP)}
+    \label{fig:cg_debt_gdp}
+  \end{subfigure} \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/gg_debt_gdp.png}
+    \caption{General gov.\ debt (\%GDP)}
+    \label{fig:gg_debt_gdp}
+  \end{subfigure}
+  \vspace{0.5em}
+  \begin{subfigure}[b]{0.6\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/gg_debt_usd.png}
+    \caption{General gov.\ debt (constant USD)}
+    \label{fig:gg_debt_usd}
+  \end{subfigure}
+  \caption{Cumulative responses to pension reforms: government debt}
+  \label{fig:fig_gov_debt}
+  \vspace{2pt}\begin{minipage}{\linewidth}{\scriptsize\setstretch{0.85}\justifying\textit{Notes:} The dependent variable is the cumulative change in government debt---relative to $t{-}1$. Responses to \textit{Age} (resp.\ \textit{Capitalization}) reforms are normalized to a one-year increase in the statutory retirement age (resp.\ a one-percentage-point increase in the contribution rate to private pension pillars). The specification includes one lag of the dependent variable, contemporaneous values, and three lags of the old-age dependency ratio, the unemployment rate, the alternative factor, and a crisis dummy, along with horizon-specific country and year fixed effects. Inference is based on bootstrapped standard errors (100~replications), clustered at the country level. Wald test statistics for joint significance and $p$-values are reported below each chart. Darker (lighter) shaded areas indicate 68\% (95\%) pointwise confidence intervals.}\end{minipage}
+\end{figure}
+
+\begin{comment}
+\begin{figure}[htbp]
+\centering
+  \begin{subfigure}[b]{0.6\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/capb_gdp.png}
+    \caption{CAPB (\%GDP)}
+    \label{fig:capb_gdp}
+  \end{subfigure}
+  \caption{Cumulative responses to pension reforms: cyclically adjusted primary balance (\%GDP)}
+  \label{fig:fig_capb}
+  \vspace{2pt}\begin{minipage}{\linewidth}{\scriptsize\setstretch{0.85}\justifying\textit{Notes:} The dependent variable is the cumulative change in the cyclically adjusted primary balance (as a share of GDP)---relative to $t{-}1$. Responses to \textit{Age} (resp.\ \textit{Capitalization}) reforms are normalized to a one-year increase in the statutory retirement age (resp.\ a one-percentage-point increase in the contribution rate to private pension pillars). The specification includes one lag of the dependent variable, contemporaneous values, and three lags of the old-age dependency ratio, the unemployment rate, the alternative factor, and a crisis dummy, along with horizon-specific country and year fixed effects. Inference is based on bootstrapped standard errors (100~replications), clustered at the country level. Wald test statistics for joint significance and $p$-values are reported below each chart. Darker (lighter) shaded areas indicate 68\% (95\%) pointwise confidence intervals.}\end{minipage}
+\end{figure}
+\end{comment}
+
+Figure~\ref{fig:fig_pension_exp} reports the responses of pension and government expenditure, and Figure~\ref{fig:fig_gov_debt} the debt responses%, and Figure~\ref{fig:fig_capb} the cyclically adjusted primary balance (CAPB)
+.
+
+The \textit{Age} reform presents a striking fiscal picture. Public pension expenditure as a share of GDP declines significantly throughout the window (panel~a of Figure~\ref{fig:fig_pension_exp}, average $-$0.46~pp), reflecting the mechanical reduction in the number of beneficiaries. In constant USD, however, public pension expenditure is essentially unaffected --- the response is quasi-zero and non-significant (panel~b), suggesting that nominal spending is broadly unchanged while GDP rises, compressing the ratio. Central government expenditure in levels (panel~d) rises significantly throughout (average $+$0.05\%), consistent with the broader economic expansion documented in Section~\ref{sec:gdp}, and the same pattern holds for general government expenditure (panel~e, average $+$0.05\%, significant throughout).  As a share of GDP, however, central government expenditure is not significantly affected (panel~c): the expansion in spending and the expansion in GDP broadly offset each other, leaving the expenditure ratio unchanged. Government debt tells a clear story (Figure~\ref{fig:fig_gov_debt}): both central government debt (panel~a, average $-$4.57~pp of GDP, significant at 68\% throughout) and general government debt (panel~b, average $-$5.46~pp of GDP, significant at 68\% and 95\% throughout) decline significantly and persistently. In constant USD, general government debt is non-significant (panel~c), again reflecting the mechanical effect of GDP growth on the denominator: the debt ratio improves primarily because the economy grows, not because debt falls in absolute terms.
+
+%Despite this improvement in debt ratios, the CAPB deteriorates significantly (Figure~\ref{fig:fig_capb}, average $-$0.46~pp, significant at 68\% and 95\% throughout, trough around h=2--3). This apparently paradoxical combination --- falling debt ratios alongside a deteriorating structural balance --- is consistent with the GDP growth documented in Section~\ref{sec:gdp} outpacing the fiscal deterioration: the denominator effect dominates the numerator effect on the debt ratio, even as the underlying fiscal position weakens.
+
+
+%The CAPB deteriorates significantly (Figure~\ref{fig:fig_capb}, average $-$0.46~pp, significant at 68\% and 95\% throughout, trough around h=2--3). This result challenges the standard narrative of Age reforms as fiscal consolidation tools: within our estimation window, the reform does not improve the structural fiscal position. A plausible interpretation is that the demand expansion and higher government expenditure documented above outweigh the pension spending savings, deteriorating the primary balance before any longer-run fiscal dividend materialises.
+
+The \textit{Capitalization} reform generates a sharply different pattern. Public pension expenditure as a share of GDP is essentially unaffected and not jointly significant (panel~a). This is a notable result: despite the structural shift of contributions toward private accounts, the pension-to-GDP ratio does not decline, likely because the simultaneous GDP contraction documented in Section~\ref{sec:gdp} offsets the reduction in nominal pension spending. In constant USD, however, public pension expenditure does decline significantly at 68\% throughout (panel~b, average $-$0.04\%), confirming that the reform does reduce nominal spending in absolute terms, even if the ratio to a shrinking GDP stays flat. Central and general government expenditure in levels also fall persistently and significantly at 68\% (panels~d--e, average $-$0.03\% for both). Central government expenditure as a share of GDP (panel~c) is, however, positive and significantly significant at 68\% over much of the window (average $+$0.54~pp) --- a result that likely reflects the sharp GDP contraction documented in Section~\ref{sec:gdp} mechanically raising the expenditure ratio even as spending falls in levels.
+
+Government debt presents a contrasting picture (Figure~\ref{fig:fig_gov_debt}): both central government debt (panel~a, average $+$2.42~pp of GDP, significant at 68\%) and general government debt (panel~b, average $+$3.72~pp of GDP, significant at 68\%) rise significantly. This increase reflects the well-known transition cost of pension privatization: as contributions are redirected toward private accounts, the government must continue to honour existing pay-as-you-go obligations while losing contribution revenues, generating additional borrowing needs in the short to medium run. In constant USD, general government debt is non-significant (panel~c), suggesting that the debt increase is partly a ratio effect driven by the GDP contraction documented in Section~\ref{sec:gdp}. %The CAPB is essentially unaffected and not jointly significant (Figure~\ref{fig:fig_capb}, average $+$0.03~pp), confirming that the Capitalization reform does not generate measurable structural fiscal consolidation within the estimation window. 
+
+Taken together, the fiscal results present a clear contrast: the Age reform reduces debt ratios through GDP growth, while the Capitalization reform reduces expenditure in levels but raises debt ratios through the transition cost channel, leaving the structural position essentially unchanged.
+
+%XXX JH: HERE 
+
+\FloatBarrier
+\subsection{External sector}
+\label{sec:external}
+
+\begin{figure}[htbp]
+\centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/exports_usd.png}
+    \caption{Exports (constant USD)}
+    \label{fig:exports_usd}
+  \end{subfigure} \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/exports_gdp.png}
+    \caption{Exports (\%GDP)}
+    \label{fig:exports_gdp}
+  \end{subfigure}
+  \vspace{0.5em}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/imports_usd.png}
+    \caption{Imports (constant USD)}
+    \label{fig:imports_usd}
+  \end{subfigure} \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/imports_gdp.png}
+    \caption{Imports (\%GDP)}
+    \label{fig:imports_gdp}
+  \end{subfigure}
+  \caption{Cumulative responses to pension reforms: trade flows}
+  \label{fig:fig_trade}
+  \vspace{2pt}\begin{minipage}{\linewidth}{\scriptsize\setstretch{0.85}\justifying\textit{Notes:} The dependent variable is the cumulative change in trade flows---relative to $t{-}1$. Responses to \textit{Age} (resp.\ \textit{Capitalization}) reforms are normalized to a one-year increase in the statutory retirement age (resp.\ a one-percentage-point increase in the contribution rate to private pension pillars). The specification includes one lag of the dependent variable, contemporaneous values, and three lags of the old-age dependency ratio, the unemployment rate, the alternative factor, and a crisis dummy, along with horizon-specific country and year fixed effects. Inference is based on bootstrapped standard errors (100~replications), clustered at the country level. Wald test statistics for joint significance and $p$-values are reported below each chart. Darker (lighter) shaded areas indicate 68\% (95\%) pointwise confidence intervals.}\end{minipage}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/trade_balance_gdp.png}
+    \caption{Trade balance (\%GDP)}
+    \label{fig:trade_balance_gdp}
+  \end{subfigure} \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/ca_balance_gdp.png}
+    \caption{Current account balance (\%GDP)}
+    \label{fig:ca_balance_gdp}
+  \end{subfigure}
+  \caption{Cumulative responses to pension reforms: external balances}
+  \label{fig:fig_balances}
+  \vspace{2pt}\begin{minipage}{\linewidth}{\scriptsize\setstretch{0.85}\justifying\textit{Notes:} The dependent variable is the cumulative change in external balances---relative to $t{-}1$. Responses to \textit{Age} (resp.\ \textit{Capitalization}) reforms are normalized to a one-year increase in the statutory retirement age (resp.\ a one-percentage-point increase in the contribution rate to private pension pillars). The specification includes one lag of the dependent variable, contemporaneous values, and three lags of the old-age dependency ratio, the unemployment rate, the alternative factor, and a crisis dummy, along with horizon-specific country and year fixed effects. Inference is based on bootstrapped standard errors (100~replications), clustered at the country level. Wald test statistics for joint significance and $p$-values are reported below each chart. Darker (lighter) shaded areas indicate 68\% (95\%) pointwise confidence intervals.}\end{minipage}
+\end{figure}
+
+Figure~\ref{fig:fig_trade} and Figure~\ref{fig:fig_balances} report the external sector responses, which we connect to Testable Prediction~\ref{test:trade} (Trade Balance and Current Account, TI~7).
+
+The \textit{Age} reform produces a significant and symmetric expansion of trade volumes in levels: both exports and imports rise throughout the window (panels~a--b, average $+$0.04\% for each), while their shares of GDP remain essentially unchanged. This pattern is a direct counterpart of the GDP expansion documented in Section~\ref{sec:gdp}: the reform lifts aggregate activity broadly, raising export supply and import demand in proportion to output, without altering the economy's external position. Consistently, neither the trade balance nor the current account balance show any significant response (Figure~\ref{fig:fig_balances}, panels~a--b). This result is in line with Testable Prediction~\ref{test:trade}: by raising domestic income and supply capacity simultaneously, the Age reform leaves the external balance unchanged.
+
+The \textit{Capitalization} reform generates a sharply different and more contractionary external picture. Export and import volumes fall significantly throughout the estimation window (panels~a--b, average $-$0.03\% and $-$0.04\% respectively), mirroring the GDP compression documented in Section~\ref{sec:gdp}: as aggregate activity shrinks, both export supply and import demand contract in level terms, while their shares of a smaller GDP remain broadly stable. Importantly, neither the trade balance nor the current account balance improve significantly (Figure~\ref{fig:fig_balances}, panels~a--b). This constitutes a notable divergence from Testable Prediction~\ref{test:trade}: the theoretical expectation that higher private saving would compress domestic demand and improve the current account through the saving-investment channel does not materialise within the ten-year estimation window. A plausible explanation is that the saving rate does not in fact rise (as documented in Section~\ref{sec:conso}), so the external balance channel through which the prediction operated is absent. Overall, the external sector results reinforce the broader pattern: effects of the Age reform are consistent with a balanced expansion of domestic activity with no external rebalancing, while the Capitalization reform generates a symmetric contraction of trade volumes without producing the current account improvement anticipated by theory.
+
+\FloatBarrier
+\subsection{Productivity}\label{sec:prod}
+\label{sec:prod}
+
+\begin{figure}[htbp]
+\centering
+  \begin{subfigure}[b]{0.6\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/tfp.png}
+    \caption{Total factor productivity}
+    \label{fig:tfp}
+  \end{subfigure}
+    \vspace{0.5em}
+  \begin{subfigure}[b]{0.6\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/gdp_per_worker.png}
+    \caption{GDP per worker (constant USD)}
+    \label{fig:gdp_per_worker}
+  \end{subfigure}
+  \caption{Cumulative responses to pension reforms: productivity}
+  \label{fig:fig_tfp}
+  \vspace{2pt}\begin{minipage}{\linewidth}{\scriptsize\setstretch{0.85}\justifying\textit{Notes:} The dependent variable is the cumulative change in total factor productivity (TFP) or GDP per worker ---relative to $t{-}1$. Responses to \textit{Age} (resp.\ \textit{Capitalization}) reforms are normalized to a one-year increase in the statutory retirement age (resp.\ a one-percentage-point increase in the contribution rate to private pension pillars). The specification includes one lag of the dependent variable, contemporaneous values, and three lags of the old-age dependency ratio, the unemployment rate, the alternative factor, and a crisis dummy, along with horizon-specific country and year fixed effects. Inference is based on bootstrapped standard errors (100~replications), clustered at the country level. Wald test statistics for joint significance and $p$-values are reported below each chart. Darker (lighter) shaded areas indicate 68\% (95\%) pointwise confidence intervals.}\end{minipage}
+\end{figure}
+
+Figure~\ref{fig:fig_tfp} reports the response of productivity: TFP in panel~(a) and GDP per worker in panel~(b).
+
+The \textit{Age} reform is associated with a positive and jointly significant increase in TFP throughout the ten-year horizon (panel~a). The response is positive on impact (around $+$0.01\%), builds steadily to approximately $+$0.02--0.03\% at horizons~7--8, and remains above zero across the full window. GDP per worker also rises, with an average of $+$0.03\% (panel~b), though the profile is less regular---with a reversion to 0 around horizons~5--6 before recovering---and pointwise significance is weaker. Taken together, both results are broadly in line with the neutral-to-mildly-positive prediction of Testable Implication~\ref{test:prod}. A plausible interpretation relies on the capital-skill complementarity channel highlighted by \citet{Dai2022}: as experienced older workers remain in employment, they raise the marginal productivity of younger workers and of physical capital, generating a net positive TFP gain that persists over the full horizon.
+
+The \textit{Capitalization} reform, by contrast, generates a negative response in both productivity indicators. TFP declines from impact, reaching a trough around horizons~1--3 before gradually reverting toward zero by horizon~4--5, with an average of essentially zero over the window (panel~a). GDP per worker exhibits a more severe and persistent contraction, averaging $-$0.06\% and remaining significantly below zero across the near-entirety of the ten-year window (panel~b). These results are not in line with Testable Implication~\ref{test:prod}, which predicted a near-zero short-run effect and a mildly positive long-run effect via capital deepening. A plausible interpretation is that the demand contraction induced by the Capitalization reform (documented in Section~\ref{sec:conso}) depresses output without a proportional reduction in labour input, mechanically lowering output per worker over the medium run. The persistence of this negative response suggests that the capital accumulation channel does not materialise within the ten-year horizon of our analysis.
+
+
+
+\FloatBarrier
+
+\section{Conclusion}
+
+
+\bibliographystyle{plainnat}
+%\bibliographystyle{apalike2}
+\bibliography{biblio_BGGH}
+
+
+\clearpage
+
+\setcounter{table}{0}
+\renewcommand{\thefigure}{A.\arabic{figure}}
+\renewcommand{\thetable}{A.\arabic{table}}
+
+
+
+\appendix
+
+
+\end{document}
+
+
+
