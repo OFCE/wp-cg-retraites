@@ -1,0 +1,250 @@
+\documentclass[11pt,english,a4paper, twoside, authoryear]{article}
+%\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsfonts,mathrsfs}
+\usepackage{cite}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage[toc,page,header]{appendix}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+\usepackage[toc,page]{appendix}
+\usepackage{graphicx}
+\usepackage[font=scriptsize, labelfont=bf]{caption}
+\usepackage{indentfirst}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{lscape}
+%\usepackage{authblk}
+\usepackage{epstopdf}
+\usepackage{supertabular}
+\usepackage{setspace}
+\usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage{eurosym}
+\doublespacing
+\usepackage{multirow}
+\usepackage{geometry}
+%\usepackage{ulem}
+%\usepackage{natbib}
+%\geometry{verbose, margin= 2 cm}
+%\geometry{scale=20, nohead}
+\usepackage{xcolor}
+\usepackage[colorlinks=true, citecolor=blue,linkcolor=blue]{hyperref}
+\usepackage[comma, numbers, sort, authoryear]{natbib}
+%\usepackage{authblk}
+%\usepackage{apalike}
+
+%\usepackage[authoryear]{natbib}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newtheorem{newresults}{Result}
+\newtheorem{testable}{Testable Implication}
+
+\newtheorem{hypothesis}{Hypothesis}
+
+\setcounter{MaxMatrixCols}{10}
+
+\newcommand{\pdf}[3]{
+\begin{center}
+\includegraphics[width=#1,height=#2,keepaspectratio]{#3.pdf}
+\end{center}
+}
+\DeclareGraphicsExtensions{.eps,.ps,.eps.gz,.ps.gz}
+\newcommand{\spac}{\rule[-2mm]{0mm}{3mm}}
+\renewcommand{\floatpagefraction}{.9}
+\renewcommand{\textfraction}{.1}
+\oddsidemargin 0cm \evensidemargin 0cm \textwidth 16cm \topmargin -1.5cm \textheight 23.5 cm \linespread{2}
+\newcommand{\dsum} {\displaystyle\sum}
+\newcommand\cites[1]{\citeauthor{#1}'s\ (\citeyear{#1})}
+
+
+\newcommand{\sym}[1]{\rlap{$#1$}}
+
+\usepackage{blindtext}
+
+
+%\fancyhead[L]{\itshape{CEPII Working Paper}}
+%\fancyhead[R]{\itshape{The collateral channel within and between countries}}
+
+
+
+\begin{document}
+
+%\begin{spacing}{1.1}
+\baselineskip17pt
+
+\title{\textbf{The Macro Effects of Pension Reforms}\thanks{We thank XXX. The usual disclaimer applies}}
+
+
+%\date{\textit{January 2026}}
+
+\urlstyle{rm}
+
+\author{Océane Blomme \footnote{Universit\'{e} de Lille, LEM-CNRS (UMR 9221), email: oceane.blomme@univ-lille.fr} \quad Carl Grekou\footnote{CEPII, email: carl.grekou@cepii.fr} \quad Thomas Grjebine\footnote{CEPII, email: thomas.grjebine@cepii.fr} \quad Jérôme Héricourt\footnote{Corresponding author: Université d'Évry Paris-Saclay, CEPS, and CEPII, email: jerome.hericourt@univ-evry.fr}
+}
+
+
+
+\maketitle
+
+%test
+
+%\begin{document}
+
+%\end{spacing}
+
+\begin{abstract}
+
+\begin{spacing}{1.0}
+\noindent
+XXX
+\bigskip
+
+\noindent \textit{JEL classification}: XXX \\
+\bigskip \newline
+\noindent \textit{Keywords}: XXX.
+\end{spacing}
+\end{abstract}
+
+
+\thispagestyle{empty}
+
+\newpage
+
+%\begin{spacing}{1.3}
+\section{Introduction}
+%\citet{}, \citalp{}
+
+
+\noindent XXX
+
+\section{Government Spending, Pensions Reforms and Macro Dynamics}
+
+\subsection{Public Spending and Economic Growth}
+
+The relationship between public spending and economic growth has long been a central issue in macroeconomics. In the neoclassical framework, fiscal policy primarily affects the level of output, with limited long-run growth effects. However, endogenous growth models have emphasized that certain categories of public expenditure can exert persistent effects on growth by entering the production function and enhancing private sector productivity. In this perspective, \citet{Barro1990} and \citet{Devarajan1996} introduce a distinction between productive and unproductive public expenditures. Productive expenditures, such as infrastructure or education, raise the marginal productivity of private inputs, while other expenditures primarily affect welfare without directly influencing growth. This distinction has become central to both theoretical and empirical analyses of fiscal policy.
+
+More recent contributions confirm that the growth effects of fiscal policy depend not only on the size of government but also on the allocation of expenditures. \citet{Sardoni2024} develops a Domar-inspired growth model in which public expenditures are partitioned into productive outlays---investment in physical and human capital that directly raises the economy's growth rate---and unproductive outlays, broadly equivalent to public consumption, which affect aggregate demand but not long-run productivity. The model shows that reorienting public spending toward productive investment raises the equilibrium growth rate and can stabilize the public debt-to-GDP ratio even in the presence of primary deficits, provided the resulting growth rate exceeds the interest rate on debt. The key policy implication is that the composition, not merely the level, of public spending is what determines whether fiscal intervention is growth-enhancing.
+
+Empirical evidence, however, initially appears inconclusive. Cross-country analyses reveal substantial model uncertainty and sensitivity to specification choices \citep{MoralBenito2012}, reflecting the multiplicity of channels through which fiscal policy operates and the difficulty of isolating causal effects. Subsequent analyses focus on the composition of public spending, which plays a crucial role in shaping macroeconomic outcomes. \citet{Gemmell2016} provide evidence that reallocating spending toward infrastructure and education is associated with higher long-run GDP levels, whereas social welfare expenditures may have weaker or even negative effects on output. Similarly, \citet{Ardanaz2021} demonstrate that the effects of fiscal consolidations depend critically on which components of spending are adjusted. Reductions in public investment are found to significantly amplify output losses, whereas protecting investment can mitigate or even reverse contractionary effects. These findings are consistent with the broader literature on fiscal multipliers, which shows that public investment tends to have larger and more persistent effects than current expenditure.
+
+Taken together, these results suggest that different categories of public spending operate through distinct transmission mechanisms, with heterogeneous implications for growth, demand, and productivity.
+
+\subsection{Transfers, Pension Systems, and Macroeconomic Channels}
+
+Within public expenditure, pension systems constitute a major component of social transfers and play a central role in macroeconomic dynamics. Their effects operate through several interrelated channels affecting both aggregate demand and supply.
+
+First, pension benefits directly influence household consumption. \citet{RomerRomer2016} establish, using a narrative identification approach for the United States, that permanent increases in social security benefits generate a significant but transitory consumption response, while temporary changes have no significant effect. \citet{BiZubairy2023} extend this narrative methodology to pension retrenchments across ten OECD countries, documenting that the macroeconomic response depends critically on the motivation behind, and implementation timing of, policy changes---a methodological lineage that is central to our own empirical strategy. In both cases, the consumption effects tend to be short-lived and do not necessarily translate into sustained increases in output or employment. The magnitude of this channel depends on households' saving behavior, with higher saving rates among retirees dampening the impact on aggregate demand.
+
+Second, pension systems affect intertemporal choices through wealth effects. Changes in expected pension benefits alter individuals' lifetime resources, thereby influencing savings and labor supply decisions. A reduction in pension generosity may induce higher savings and delayed retirement, supporting capital accumulation and labor supply in the long run.
+
+Third, pension policies shape labor supply incentives over the life cycle. By modifying the returns to continued work, they affect both retirement timing and labor market participation. These mechanisms imply that pension systems simultaneously influence consumption, savings, and labor supply, generating complex general equilibrium effects.
+
+\subsection{Pension Reforms and Labor Supply: Micro and Macro Evidence}
+
+A substantial body of empirical literature examines the effects of pension reforms on labor supply, particularly at older ages. Early contributions, notably by \citet{GruberWise1999}, document large cross-country differences in retirement behavior driven by pension incentives. These studies show that retirement decisions are highly responsive to institutional features such as eligibility ages and benefit rules. More recent empirical work provides causal evidence on the effects of increasing the retirement age. \citet{StaubliZweimuller2013} find that raising the early retirement age significantly increases employment among older workers. Similar conclusions are reached in a variety of institutional contexts, confirming that retirement age reforms are an effective tool to raise labor force participation at older ages.
+
+The construction of systematic data on pension reforms has itself been an important research contribution. \citet{Beetsma2020} build a comprehensive narrative dataset of pension reform measures for a large set of OECD countries over the period 1970--2017, documenting whether reforms expand or contract pension arrangements and which population groups they affect. Their main finding is that the timing of pension reforms is driven by business cycle conditions, with retrenchment measures more likely during downturns, while demographic pressures determine the long-run trend but not the short-run dynamics. Crucially, however, their dataset does not record the motivation behind policy changes or the length of implementation lags---two dimensions that turn out to be central to identifying causal effects, as demonstrated by \citet{BiZubairy2023}. This identification challenge mirrors that faced in the broader structural reform literature: \citet{DuvalFurceri2018} address the same endogeneity problem using a narrative dataset of major reforms for labor and product market reforms in 26 advanced economies, finding that product market reforms raise productivity and output over the medium term while the effects of labor market reforms depend on the state of the business cycle. %Our paper follows this methodological tradition, applying local projections to a narrative-identified measure of structural pension reforms.
+
+A crucial qualification, however, concerns the timing of reforms. \citet{BiZubairy2023} show that the labor market response depends critically on whether reforms are implemented immediately or phased in with implementation lags. When retrenchments take effect without delay, workers close to retirement stay in the labor force longer, consistent with an income effect channel. By contrast, when reforms are announced with prolonged phase-in periods---averaging close to a decade in their data, and often exceeding fifteen years---labor force participation rates for the 55--64 age group decline, as workers exit the market early to lock in benefits under the pre-reform regime. This fiscal foresight channel, compounded by an uncertainty channel when reforms signal further future cutbacks, can dominate and reverse the standard income effect. The magnitude of the negative labor force participation rate response is larger for fundamental, age- and contribution-based reforms with long lags, and in countries where citizens have low trust in government. This finding implies that the direction of the effect of a retirement age reform on the employment of older workers is not unconditionally positive: it depends on the reform's design, notably its announcement horizon.
+
+Importantly, concerns about potential crowding-out effects on younger workers are not supported by the empirical evidence. \citet{MunnellWu2012} show that higher employment among older workers does not reduce employment opportunities for younger cohorts in the United States; if anything, the two move together, consistent with a demand-complementarity view of the labor market. \citet{Dai2022} provide a theoretical foundation for this result within a labor search framework that explicitly models cross-market interactions between young and old workers. Through a capital-skill complementarity channel, an increase in the share of older workers raises the marginal product of younger workers, generating a positive effect on youth employment---a mechanism that can offset the negative crowding-out effect operating through cross-market matching. These findings suggest that the aggregate employment effect of delayed retirement depends on which channel dominates, and that the sign of the effect on younger workers is not uniformly negative.
+
+At the same time, pension reforms may generate heterogeneous effects across individuals and firms. Workers with higher human capital or better health are more likely to remain employed, while more vulnerable groups may experience transitions toward unemployment or inactivity. At the firm level, delayed retirement can affect internal labor market dynamics and career progression, leading to short-term organizational adjustments.
+
+Regarding productivity, the empirical literature does not identify systematic negative effects of an ageing workforce. Productivity outcomes depend on the interaction between experience, skills, and organizational adaptation within firms, as well as complementarities across workers of different ages. \citet{Dai2022} formalize this through a nested CES production function in which older workers are more complementary to capital than younger workers---a capital-skill complementarity that raises the productivity and wages of young workers even as the share of older workers increases. This suggests that productivity effects of delayed retirement are heterogeneous across worker types and depend on the production technology, rather than being uniformly negative.
+
+
+\subsection{A Unified Framework of Pension Reform Transmission Channels}
+
+Pension reforms can be interpreted as fiscal policy shocks affecting the economy through multiple transmission channels. Changes in contribution rates primarily affect labor costs and disposable income, thereby influencing employment, consumption, and investment. Modifications in pension benefits operate mainly through demand and wealth effects, while increases in the retirement age act as positive labor supply shocks.
+
+These different instruments generate distinct short-run and long-run dynamics, a point systematically quantified by \citet{KaramMuirPereiraTuladhar2010} using the IMF's Global Integrated Monetary and Fiscal model (GIMF) for five major world regions. They find that pension reforms can have positive effects on GDP growth both in the short run---propelled by rising labor income and consumption following retirement age increases---and in the long run, as lower government debt crowds in private investment. Among the three reform instruments they consider (retirement age increases, benefit cuts, and contribution rate hikes), raising the retirement age yields the strongest output impact in both the short and long run, operating through demand effects of higher labor income and supply effects of expanded productive capacity. Benefit cuts and contribution rate increases, by contrast, tend to depress consumption in the short run while generating fiscal savings that support investment over time. As \citet{BiZubairy2023} emphasize, however, these dynamics depend critically on the implementation horizon: when reforms come with long announcement lags, foresight and uncertainty effects can dominate and temporarily depress labor force participation, reversing the expected positive employment effect before the reform is fully phased in.
+
+This framework highlights that pension reforms affect not only the sustainability of public finances but also key macroeconomic variables through general equilibrium interactions involving labor supply, consumption, savings, and production decisions.
+
+\subsection{Testable Relationships}
+
+The literature surveyed above allows us to derive a set of testable relationships regarding the macroeconomic effects of pension reforms that raise the statutory retirement age. For each outcome variable, we state the expected direction of the effect and the underlying transmission mechanism, distinguishing between short-run and medium-to-long-run dynamics where appropriate.
+
+\begin{testable}[Employment rate of workers aged 55--64]\label{test:emp_old} \textcolor{red}{Raising the retirement age directly affects older workers’ participation in the labor market by delaying their exit from employment.\footnote{In France, several studies have examined the effects of various measures aimed at increasing the retirement age since the 2000s. Empirical evidence shows a significant increase in the employment rate of individuals close to retirement age, but also a temporary rise in unemployment, disability, and inactivity (\cite{Rabate2020}; \cite{Dubois2016}; \cite{Leduigou2016}). These developments mainly reflect a persistence in individuals’ prior labor market status rather than an immediate adjustment of the labor market. When the retirement age is raised, some individuals who would have claimed their pension remain employed for longer, while those who were already unemployed or inactive also tend to stay in that status for a longer period.}}
+
+The effect of an increase in the statutory retirement age on the employment rate of workers aged 55--64 depends also on the implementation horizon of the reform. When a reform takes effect immediately upon announcement, the income effect channel dominates: workers close to retirement face lower expected lifetime pension wealth and respond by extending their labor market participation. The effect on the labor force participation rate of the 55--64 age group is then unambiguously positive, as documented by \citet{StaubliZweimuller2013} and confirmed by simulation evidence reviewed in \citet{GruberWise1999}.
+
+When reforms are announced with long phase-in periods, however, fiscal foresight and uncertainty channels may offset or reverse the income effect. \citet{BiZubairy2023} show that, for reforms with lags averaging a decade or more, workers close to retirement exit the labor market early to lock in pre-reform benefits, causing a temporary decline in the labor force participation rate of the 55--64 group during the phase-in period. This negative effect is strongest for age- and contribution-based reforms with lags of fifteen years or longer, and in low-credibility institutional environments.
+
+In our empirical analysis, the predicted sign of this effect is therefore conditional on the reform's implementation horizon: positive for reforms implemented without lag or with short lags, and ambiguous to negative in the short run for reforms with long phase-in periods. Since structural pension reforms in OECD countries have been implemented with average lags close to a decade, this distinction is empirically relevant and will be accounted for in our identification strategy.
+\end{testable}
+
+\begin{testable}[Aggregate employment rate]\label{test:emp_agg}
+The effect of an increase in the statutory retirement age on the aggregate employment rate inherits the conditionality identified in Prediction~\ref{test:emp_old}. For reforms implemented without lag, the positive effect on the labor force participation rate of the 55--64 group transmits to the aggregate rate: \citet{BiZubairy2023} find no significant impact on the labor force participation rate of younger workers (aged 20--49) regardless of the reform's timing, so there is no evidence of crowd-out. Concerns about younger workers being displaced by older ones are not supported by the empirical evidence more broadly \citep{MunnellWu2012}: employment rates across age cohorts tend to move together, reflecting aggregate demand conditions rather than a fixed number of jobs.
+
+For reforms implemented with long lags, the temporary decline in older workers' participation identified in Prediction~\ref{test:emp_old} may translate into a short-run decline in aggregate employment before the reform's positive supply-side effects materialize. The medium-to-long-run effect remains positive as the reform is phased in. We therefore predict a positive effect on aggregate employment in the long run, and an effect that is ambiguous in the short run, contingent on the implementation design.
+\end{testable}
+
+\begin{testable}[Private consumption]\label{test:conso} \textcolor{red}{Il me semble que la consommation doit plutôt augmenter : plus de gens qui travaillent relativement, donc plus de gens qui consomment (et qui ont un revenu plus important par rapport au revenu de remplacement).}
+An increase in the statutory retirement age reduces aggregate private consumption in the short run. Pension retrenchment operates through two complementary channels: (i) a negative wealth effect, as households revise downward their expected lifetime resources and net pension wealth; and (ii) a reduction in current disposable income for individuals who would otherwise have retired (\textcolor{red}{Je ne comprends pas pourquoi il y a une réduction du current disposable income. Pour moi, il augmente relativement}. \citet{RomerRomer2016} document that social security benefit increases produce significant but short-lived consumption rises in the United States, consistent with a strong but transitory demand effect. In the medium run, the contractionary effect of a retirement age increase may be partially offset as the employment of older workers rises and labor income replaces forgone pension transfers---a dynamic consistent with \citet{KaramMuirPereiraTuladhar2010}, who find that retirement age reforms boost consumption in the short run through the demand effect of higher lifetime labor income. The net short-run effect is therefore expected to be negative for benefit-cut or contribution-rate reforms, but potentially less contractionary---or even mildly expansionary---when the reform primarily takes the form of a retirement age increase that raises current labor income.
+\end{testable}
+
+\begin{testable}[Investment]\label{test:invest}
+An increase in the statutory retirement age exerts a positive effect on investment in the medium-to-long run, through two main channels. First, the associated improvement in public finances reduces fiscal pressure and may lower sovereign risk premia, enhancing the conditions for private investment. Second, higher labor supply raises the marginal product of capital, thereby stimulating investment in physical and human capital. \citet{KaramMuirPereiraTuladhar2010} confirm this mechanism in a multi-country general equilibrium setting, finding that pension reforms reduce government debt, which crowds in private investment in the long run, with the effect strongest for retirement age reforms. In the short run, however, investment may respond negatively or neutrally to the demand contraction (\textcolor{red}{je dirais que là aussi ca booste plutôt la dmeande}) induced by lower consumption (Prediction~\ref{test:conso}), so the net effect is expected to be more clearly positive over longer horizons.
+\end{testable}
+
+\begin{testable}[Labour productivity]\label{test:prod}
+The effect of raising the statutory retirement age on aggregate labour productivity is ambiguous in theory but expected to be mildly negative or neutral in the short run. On the one hand, the retention of older workers who would otherwise have exited the labor market may reduce average productivity if experience effects are dominated by declining physical or cognitive capacity. On the other hand, the empirical literature does not identify a systematic negative relationship between workforce aging and productivity, as experience-based human capital accumulation and firm-level organizational adjustments tend to offset such effects. We therefore expect a neutral-to-small negative short-run effect, potentially turning neutral or slightly positive as firms adapt and as the composition of the active labor force stabilizes.
+\end{testable}
+
+\section{Empirics}
+
+\subsection{Data}
+
+\subsection{Empirical Model}
+
+LP à la Jorda (2025). Bien argumenter autour de l'endogénéité.
+
+\section{Conclusion}
+
+
+\bibliographystyle{elsarticle-harv}
+%\bibliographystyle{apalike2}
+\bibliography{biblio_BGGH}
+
+
+\clearpage
+
+\setcounter{table}{0}
+\renewcommand{\thefigure}{A.\arabic{figure}}
+\renewcommand{\thetable}{A.\arabic{table}}
+
+
+
+\appendix
+
+
+\end{document}
+
+
+
