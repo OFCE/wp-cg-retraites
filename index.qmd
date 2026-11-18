@@ -9,11 +9,11 @@ csl: www/csl/apa-6th-edition.csl
 format:
   wp-html: default
   wp-typst:
-    output-file: ofce-draft-wp-cg-retraites-v0.pdf
+    output-file: OFCEWP2026-14.pdf
 format-links:
   - typst
   - format: wp-typst
-    text: ofce-draft-wp-cg-retraites-v0.pdf
+    text: OFCEWP2026-14.pdf
     icon: file-pdf
 ---
 

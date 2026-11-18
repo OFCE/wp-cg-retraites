@@ -205,7 +205,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
-<meta name="quarto:status" content="draft">
 
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
@@ -302,7 +301,7 @@ window.Quarto = {
 <body class="floating nav-fixed slimcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>Preliminary version</div>
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -438,8 +437,10 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Section">
     <nav id="TOC" role="doc-toc" class="toc-active">
   <a href="index.html">
-  
-          <span class="badge-draft">Preliminary WP (v0)</span>
+   <p class="wp-toc-label">
+          <img src="site_libs/quarto-contrib/quarto-project/ofce/ofce/img/ofce.png" width="45" height="22" style="margin:0px -4px 0px 0px">
+      &nbsp;Working Paper<br>
+      n°2026-14</p>
       
   </a>
     <h2 id="toc-title">On this page</h2>
@@ -499,24 +500,6 @@ window.Quarto = {
 
     
   
-  <div>
-    <div class="quarto-title-meta-contents">
-          <span class="badge-draft" id="ofce-badge-draft">Preliminary version (v0)·do not quote·do not disseminate</span>
-        </div>
-  </div>
-  <script>
-  (function () {
-    fetch("push-count.json")
-      .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
-      .then(function (data) {
-        var el = document.getElementById("ofce-badge-draft");
-        if (el && data && data.count != null) {
-          el.innerHTML += "<br>&#8634; d\u00e9ploiement n\u00b0" + data.count;
-        }
-      })
-      .catch(function () { /* push-count.json absent (ex. production) — ignoré */ });
-  })();
-  </script>
 
           <div class="quarto-title-meta-author">
         <div class="quarto-title-meta-heading">Authors</div>
@@ -577,12 +560,6 @@ window.Quarto = {
         </div>
         
         
-              <div>
-          <div class="quarto-title-meta-heading">Status</div>
-          <div class="quarto-title-meta-contents">
-            <p class="date">draft</p>
-            </div>
-        </div>
         
         
       </div>
