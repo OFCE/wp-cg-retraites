@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "id": "ife-wp-2026-14-en",
+  "translation_id": null,
+  "institution": "ife",
+  "type": "working-paper",
+  "media": "html",
+  "lang": "en",
+  "title": "The Macroeconomic Effects of Pension Reforms",
+  "authors": [
+    "Océane Blomme",
+    "Carl Grekou",
+    "Thomas Grjebine",
+    "Jérôme Héricourt"
+  ],
+  "abstract": "This paper studies the macroeconomic effects of pension reforms in advanced economies. We build a new narrative database of major pension reforms in 17 OECD countries over 1980-2025, recording their timing, magnitude, and phase-in across retirement ages, early-retirement rules, contribution requirements, and private pillars. A conditional factor analysis extracts two orthogonal reform dimensions: an *Age* factor (delayed retirement) and a *Capitalisation* factor (a financing-related dimension associated with funded schemes). Local projections show that retirement-age reforms are broadly expansionary: they raise older workers’ participation, actual and potential GDP, consumption, and investment, while lowering pension expenditure and public debt ratios. They act as positive labour-supply shocks rather than fiscal retrenchments. By contrast, based on fewer episodes, we find suggestive evidence that the *Capitalisation* factor is associated with persistent declines in GDP, consumption, investment, GDP per worker, and higher debt ratios, consistent with transition costs and demand compression outweighing capital-accumulation effects over the medium run. Overall, the instrument matters: delaying retirement can improve both growth and fiscal sustainability, whereas shifting to funded schemes does not appear to deliver macroeconomic gains within ten years.\n",
+  "categories": [],
+  "keywords": [
+    "Pension reforms",
+    "retirement age",
+    "funded pensions",
+    "fiscal policy",
+    "labour supply",
+    "local projections"
+  ],
+  "jel": [
+    "E62",
+    "H55",
+    "J26",
+    "H30",
+    "C33"
+  ],
+  "date_published": "2026-11-18",
+  "date_modified": "2026-11-18",
+  "url": "https://www.ofce.fr/wp/2026/14/v0/",
+  "pdf": "https://www.ofce.fr/wp/2026/14/v0/OFCEWP2026-14.pdf",
+  "repo": "https://github.com/OFCE/wp-cg-retraites/",
+  "auto_update": true,
+  "wp": 14,
+  "annee": 2026,
+  "version": "v0",
+  "stage": false,
+  "pdf-path": "wp/2026/14/v0/OFCEWP2026-14.pdf",
+  "source-repo": "OFCE/wp-cg-retraites",
+  "ofceweb-version": "1.0.6"
+}
