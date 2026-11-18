@@ -1,19 +1,25 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1795017912551,
+    "generatedTime": 1795018588244,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
-            "size": 0,
-            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            "size": 35370,
+            "hash": "62eb7e53f93a1aa614cb9200e88d0ab6256190a377b02570d8496d32c8a95a1b"
+        },
+        {
+            "type": "file",
+            "name": "OFCEWP2026-14.pdf",
+            "size": 3518050,
+            "hash": "c4685077e36a2f123d97f59b893f1141e5c027b159d811b09bbb543324ec1759"
         },
         {
             "type": "file",
             "name": "annexes.html",
-            "size": 99108,
-            "hash": "64575e3831783fb85ae1194a0211992633c944062eee7379b8794c8ad131a324"
+            "size": 99021,
+            "hash": "1f633abf4836cd92bc64075424b61c0eb9e2ae2d34a9153ac34c2155da0c765d"
         },
         {
             "type": "folder",
@@ -22,26 +28,20 @@
         {
             "type": "file",
             "name": "index.html",
-            "size": 327482,
-            "hash": "a271888ff4fefa892e3e8440e8a7cd4be0ae1870849d80098e2f482c59d4b3da"
+            "size": 327411,
+            "hash": "00b1dde4b2b3c5975c9243c061f28e29b57c9280ae02fd2e1b8e203bab09ccf3"
         },
         {
             "type": "file",
             "name": "manifest.json",
-            "size": 2451,
-            "hash": "4f7ed654b40fadb91bc85959bd3df6233cb321e2c1d54b2c99c84128f8af199f"
+            "size": 2419,
+            "hash": "920a3b837ef956c558f638cef17c70805428bc46295eefdee089e54ea800c7ed"
         },
         {
             "type": "file",
             "name": "news.html",
-            "size": 40342,
-            "hash": "71ee7477a367c540416ed961b833314eb99b7da04ebeb835bb049bb2f7132dd5"
-        },
-        {
-            "type": "file",
-            "name": "ofce-draft-wp-cg-retraites-v0.pdf",
-            "size": 3516398,
-            "hash": "caa80d24093a7e9b73cbf3c9709d5bbca59f4682c7385d1f625f78e1a0d2982e"
+            "size": 40247,
+            "hash": "9498e2ce14fcc9678095c87b83c46816be226a7f9b6491c49fb1a847afdf683b"
         },
         {
             "type": "file",
@@ -56,14 +56,14 @@
         {
             "type": "file",
             "name": "sitemap.xml",
-            "size": 614,
-            "hash": "8ee440bc9bbff526e0cd29c1951d2805f879e4c8d1aacefb8867dfc5274d5e6e"
+            "size": 578,
+            "hash": "3c81f06e6bbfd752811cf6542ff00e803e46e39273ad369f1f871a026d7de220"
         },
         {
             "type": "file",
             "name": "todo.html",
-            "size": 47182,
-            "hash": "b22006d3aadab92a92db245ade0c08c0c3caa4f4cdafdfe93363aeb22cca4d09"
+            "size": 47087,
+            "hash": "db692562b5bc79d8c149e3654aba2eb3cf1a488a3d8c8885cb165a999c7b5da7"
         },
         {
             "type": "folder",
@@ -107,15 +107,15 @@
         },
         {
             "type": "file",
-            "name": "figures/Age_GrossSavings_GDP_RotB1k.png",
-            "size": 55514,
-            "hash": "9cd7497701b3cbd517f93a1b38809e62af5ea29d507a358ca112488e6f11959e"
-        },
-        {
-            "type": "file",
             "name": "figures/Age_cons_GDP_RotB1k.png",
             "size": 54936,
             "hash": "bac58c4e05e9db211ccf545324f1da866c1983df2c7f7c2dea000ebf779473bd"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_GrossSavings_GDP_RotB1k.png",
+            "size": 55514,
+            "hash": "9cd7497701b3cbd517f93a1b38809e62af5ea29d507a358ca112488e6f11959e"
         },
         {
             "type": "file",
@@ -125,15 +125,15 @@
         },
         {
             "type": "file",
-            "name": "figures/Age_imports_GDP_RotB1k.png",
-            "size": 57281,
-            "hash": "365ee59acad891c1dec633a4d540660e1175e565f844aa081c8d927be0be073f"
-        },
-        {
-            "type": "file",
             "name": "figures/Age_finv_GDP_RotB1k.png",
             "size": 57768,
             "hash": "5df1d9b92c1abc40c47cc9589bbafe636f59a28e3297b39ab596348f82a8cd07"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_imports_GDP_RotB1k.png",
+            "size": 57281,
+            "hash": "365ee59acad891c1dec633a4d540660e1175e565f844aa081c8d927be0be073f"
         },
         {
             "type": "file",
@@ -167,6 +167,12 @@
         },
         {
             "type": "file",
+            "name": "figures/Age_lnrExports_RotB1k.png",
+            "size": 57389,
+            "hash": "34f73e49c48bbd28bd9440fde2fddcbad194dfd3e5d3fbf64c84bd5e9ae1e4ea"
+        },
+        {
+            "type": "file",
             "name": "figures/Age_lnrFinv_RotB1k.png",
             "size": 57282,
             "hash": "d0436b5c64b89f0839a413170ce2444d8330e297404b7e2e8ababdfd240ef98c"
@@ -182,12 +188,6 @@
             "name": "figures/Age_lnrGDP_pot_RotB1k.png",
             "size": 55284,
             "hash": "f9c0f8f9273794009e2ed2d78f9c0320437bcdcd609074fdbcc457edae2f0e72"
-        },
-        {
-            "type": "file",
-            "name": "figures/Age_lnrExports_RotB1k.png",
-            "size": 57389,
-            "hash": "34f73e49c48bbd28bd9440fde2fddcbad194dfd3e5d3fbf64c84bd5e9ae1e4ea"
         },
         {
             "type": "file",
@@ -383,15 +383,15 @@
         },
         {
             "type": "file",
-            "name": "figures/Capi_lnrGDP_pot_RotB1k.png",
-            "size": 56338,
-            "hash": "b938d75f11868ed0b7043f4af13f6114fd86efa7391be8ed1eeb1ef5b1de221a"
-        },
-        {
-            "type": "file",
             "name": "figures/Capi_lnrGDP_pw_RotB1k.png",
             "size": 55173,
             "hash": "148467051c969d722058e805db4c1c2ae6bb2189f0abe3a98a36866f225bedff"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_lnrGDP_pot_RotB1k.png",
+            "size": 56338,
+            "hash": "b938d75f11868ed0b7043f4af13f6114fd86efa7391be8ed1eeb1ef5b1de221a"
         },
         {
             "type": "file",
@@ -455,21 +455,27 @@
         },
         {
             "type": "file",
-            "name": "figures/Capi_unemp2_RotB1k.png",
-            "size": 51992,
-            "hash": "4a2116b6a60f33f1fd63e2257e5d538185c3acd8bd220c017c3b1431901de93d"
-        },
-        {
-            "type": "file",
             "name": "figures/Capi_tx_act_5564_RotB1k.png",
             "size": 52444,
             "hash": "b70055f2416434d9e8237ba81a31467f731dbc74ec885a55282aee391a3e263b"
         },
         {
             "type": "file",
+            "name": "figures/Capi_unemp2_RotB1k.png",
+            "size": 51992,
+            "hash": "4a2116b6a60f33f1fd63e2257e5d538185c3acd8bd220c017c3b1431901de93d"
+        },
+        {
+            "type": "file",
             "name": "figures/FiscalConso_GrossDSavingsGDP.png",
             "size": 297670,
             "hash": "bdc7aede7fc851c52cfdf4aa576a9a8d58dfb79b8333aa534276725a1dd89a8c"
+        },
+        {
+            "type": "file",
+            "name": "figures/FiscalConso_finv_GDP.png",
+            "size": 308892,
+            "hash": "5bdc7bf70ce4db64b46e4ef3c3e83116ea3c9e71020c9d47bc3e9800e9ead392"
         },
         {
             "type": "file",
@@ -482,12 +488,6 @@
             "name": "figures/FiscalConso_labfopar.png",
             "size": 300030,
             "hash": "442a5e781043156d75e6296bb53fb48111961ad3566b34224849e4be36afeebe"
-        },
-        {
-            "type": "file",
-            "name": "figures/FiscalConso_finv_GDP.png",
-            "size": 308892,
-            "hash": "5bdc7bf70ce4db64b46e4ef3c3e83116ea3c9e71020c9d47bc3e9800e9ead392"
         },
         {
             "type": "file",
@@ -533,6 +533,12 @@
         },
         {
             "type": "file",
+            "name": "figures/Googletr_GrossDSavingsGDP.png",
+            "size": 193447,
+            "hash": "295e6d55c91ee55f54d63624aad16063c1703969a6175f11f468283c2c26ecfd"
+        },
+        {
+            "type": "file",
             "name": "figures/Googletr_finv_GDP.png",
             "size": 189226,
             "hash": "72ee556101d26ecb9b4e0b86b5192e88b9b0a60bde9766c2e235dff8ce557b37"
@@ -542,12 +548,6 @@
             "name": "figures/Googletr_inv_GDP.png",
             "size": 178426,
             "hash": "b16787d92182f11f60759ccab03346f639aa7e0b6667b6719d57ffe8a9fa03a6"
-        },
-        {
-            "type": "file",
-            "name": "figures/Googletr_GrossDSavingsGDP.png",
-            "size": 193447,
-            "hash": "295e6d55c91ee55f54d63624aad16063c1703969a6175f11f468283c2c26ecfd"
         },
         {
             "type": "file",
@@ -581,15 +581,15 @@
         },
         {
             "type": "file",
-            "name": "figures/Googletr_lnrInv.png",
-            "size": 196777,
-            "hash": "020c5880fb2e31f3a7ec6265a136ad4e7ee78cc21d86b1d498017c590fc97043"
-        },
-        {
-            "type": "file",
             "name": "figures/Googletr_lnrGrossDomSavings.png",
             "size": 204968,
             "hash": "914f7670dc4c3929760c6e63169688be43a04d2f68a6f1f6b371d78312c6dd55"
+        },
+        {
+            "type": "file",
+            "name": "figures/Googletr_lnrInv.png",
+            "size": 196777,
+            "hash": "020c5880fb2e31f3a7ec6265a136ad4e7ee78cc21d86b1d498017c590fc97043"
         },
         {
             "type": "file",
@@ -653,15 +653,15 @@
         },
         {
             "type": "file",
-            "name": "figures/Placebo_lnrInv.png",
-            "size": 159186,
-            "hash": "847329c226d4dc036efb4798855d40bc2e4881aa4c315631e1cb133ec1b50848"
-        },
-        {
-            "type": "file",
             "name": "figures/Placebo_lnrGrossDomSavings.png",
             "size": 147351,
             "hash": "0b7b0b1ed84bb15aaad40971ca3a9749563dbe0d2f42bf057d22174c26e4914b"
+        },
+        {
+            "type": "file",
+            "name": "figures/Placebo_lnrInv.png",
+            "size": 159186,
+            "hash": "847329c226d4dc036efb4798855d40bc2e4881aa4c315631e1cb133ec1b50848"
         },
         {
             "type": "file",
@@ -807,15 +807,15 @@
         },
         {
             "type": "file",
-            "name": "site_libs/bootstrap/bootstrap-eb59f3e9777795da5006961f778b36ba.min.css",
-            "size": 526701,
-            "hash": "bdadcac77904bd39b018e38e84acdf611fee5aef4b41773f6e92b3fab0714998"
-        },
-        {
-            "type": "file",
             "name": "site_libs/bootstrap/bootstrap-icons.css",
             "size": 99464,
             "hash": "01253947f506e030589e4f33fc7ec7ccdfb9505e2e596dedf16445f12e243c0a"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/bootstrap/bootstrap-eb59f3e9777795da5006961f778b36ba.min.css",
+            "size": 526701,
+            "hash": "bdadcac77904bd39b018e38e84acdf611fee5aef4b41773f6e92b3fab0714998"
         },
         {
             "type": "file",
@@ -825,15 +825,15 @@
         },
         {
             "type": "file",
-            "name": "site_libs/clipboard/clipboard.min.js",
-            "size": 9160,
-            "hash": "e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9"
-        },
-        {
-            "type": "file",
             "name": "site_libs/bootstrap/bootstrap.min.js",
             "size": 80668,
             "hash": "d2ea6c1e0cabca20d18e924b25a1cd0187c38ba7c33f60ab06e1b0402b9bcdb5"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/clipboard/clipboard.min.js",
+            "size": 9160,
+            "hash": "e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9"
         },
         {
             "type": "file",
@@ -895,15 +895,15 @@
         },
         {
             "type": "file",
-            "name": "site_libs/quarto-html/tippy.umd.min.js",
-            "size": 24033,
-            "hash": "41181eeec6d7ba64cb9165f0e95563e34e026bde79e7c13aeec83270429b6fae"
-        },
-        {
-            "type": "file",
             "name": "site_libs/quarto-nav/headroom.min.js",
             "size": 4570,
             "hash": "5b80cc4165a661a3f2060d6bdb5ccff591f04c4f8e39a06c12d3c2544587cb17"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-html/tippy.umd.min.js",
+            "size": 24033,
+            "hash": "41181eeec6d7ba64cb9165f0e95563e34e026bde79e7c13aeec83270429b6fae"
         },
         {
             "type": "file",
