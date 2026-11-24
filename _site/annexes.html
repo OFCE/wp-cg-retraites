@@ -134,12 +134,6 @@ cookieconsent.run({
 });
 </script> 
   
-<script async="" src="https://hypothes.is/embed.js"></script>
-<script>
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    document.body.classList.add('hypothesis-enabled');
-  });
-</script>
 <script>
 // État actif de la navbar par préfixe d'URL : un item est actif si le premier
 // segment de son href (URLs racine, ex. /blog2024/, /prev/derniere/) coïncide
@@ -217,7 +211,8 @@ document.addEventListener('DOMContentLoaded', function () {
 <meta name="citation_cover_date" content="2026-11-18">
 <meta name="citation_year" content="2026">
 <meta name="citation_online_date" content="2026-11-18">
-<meta name="citation_fulltext_html_url" content="annexes.html">
+<meta name="citation_fulltext_html_url" content="https://www.ofce.fr/wp/2026/14/">
+<meta name="citation_issue" content="2026-14">
 <meta name="citation_language" content="en">
 <meta name="citation_journal_title" content="Institut français d'économie working paper">
 <meta name="citation_reference" content="citation_title=Comparative political data set 1960-2023; citation_author=Klaus Armingeon; citation_author=Sarah Engler; citation_author=Lucas Leemann; citation_author=David Weisstanner; citation_publication_date=2025; citation_cover_date=2025; citation_year=2025; citation_journal_title=Zurich/Lueneburg/Lucerne: University of Zurich, Leuphana University Lueneburg, and University of Lucerne;">
@@ -1313,14 +1308,15 @@ Müller, K., Xu, C., Lehbib, M., &amp; Chen, Z. (2025). <em>The global macro dat
     Héricourt, Jérôme},
   title = {Annexes},
   journal = {Institut français d’économie working paper},
+  number = {2026-14},
   date = {2026-11-18},
-  url = {annexes.html},
+  url = {https://www.ofce.fr/wp/2026/14/},
   langid = {en}
 }
 </code></pre><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-blomme2026" class="csl-entry quarto-appendix-citeas" role="listitem">
 Blomme, O., Grekou, C., Grjebine, T., &amp; Héricourt, J. (2026).
-Annexes. <em>Institut Français d’économie Working Paper</em>. Retrieved
-from <a href="annexes.html">annexes.html</a>
+Annexes. <em>Institut Français d’économie Working Paper</em>, (2026-14).
+Retrieved from <a href="https://www.ofce.fr/wp/2026/14/">https://www.ofce.fr/wp/2026/14/</a>
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -1395,7 +1391,7 @@ from <a href="annexes.html">annexes.html</a>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/staging\.ofce\.fr\/wp-cg-retraites\/v0\/");
+        var filterRegex = new RegExp("https:\/\/www\.ofce\.fr\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

@@ -33,14 +33,14 @@
   "date_published": "2026-11-18",
   "date_modified": "2026-11-18",
   "url": "https://www.ofce.fr/wp/2026/14/v0/",
-  "pdf": "https://www.ofce.fr/wp/2026/14/v0/ofce-draft-wp-cg-retraites-v0.pdf",
+  "pdf": "https://www.ofce.fr/wp/2026/14/v0/OFCEWP2026-14.pdf",
   "repo": "https://github.com/OFCE/wp-cg-retraites/",
   "auto_update": true,
   "wp": 14,
   "annee": 2026,
   "version": "v0",
   "stage": false,
-  "pdf-path": "wp/2026/14/v0/ofce-draft-wp-cg-retraites-v0.pdf",
+  "pdf-path": "wp/2026/14/v0/OFCEWP2026-14.pdf",
   "source-repo": "OFCE/wp-cg-retraites",
   "ofceweb-version": "1.0.6"
 }
