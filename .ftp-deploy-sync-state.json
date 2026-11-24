@@ -1,0 +1,981 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1795018588244,
+    "data": [
+        {
+            "type": "file",
+            "name": ".ftp-deploy-sync-state.json",
+            "size": 35370,
+            "hash": "62eb7e53f93a1aa614cb9200e88d0ab6256190a377b02570d8496d32c8a95a1b"
+        },
+        {
+            "type": "file",
+            "name": "OFCEWP2026-14.pdf",
+            "size": 3518050,
+            "hash": "c4685077e36a2f123d97f59b893f1141e5c027b159d811b09bbb543324ec1759"
+        },
+        {
+            "type": "file",
+            "name": "annexes.html",
+            "size": 99021,
+            "hash": "1f633abf4836cd92bc64075424b61c0eb9e2ae2d34a9153ac34c2155da0c765d"
+        },
+        {
+            "type": "folder",
+            "name": "figures"
+        },
+        {
+            "type": "file",
+            "name": "index.html",
+            "size": 327411,
+            "hash": "00b1dde4b2b3c5975c9243c061f28e29b57c9280ae02fd2e1b8e203bab09ccf3"
+        },
+        {
+            "type": "file",
+            "name": "manifest.json",
+            "size": 2419,
+            "hash": "920a3b837ef956c558f638cef17c70805428bc46295eefdee089e54ea800c7ed"
+        },
+        {
+            "type": "file",
+            "name": "news.html",
+            "size": 40247,
+            "hash": "9498e2ce14fcc9678095c87b83c46816be226a7f9b6491c49fb1a847afdf683b"
+        },
+        {
+            "type": "file",
+            "name": "search.json",
+            "size": 147300,
+            "hash": "cb3f1ac477a77a5fc15dbdccb822d1f1bb88e875fcee6b38c9504b80eebbfe60"
+        },
+        {
+            "type": "folder",
+            "name": "site_libs"
+        },
+        {
+            "type": "file",
+            "name": "sitemap.xml",
+            "size": 578,
+            "hash": "3c81f06e6bbfd752811cf6542ff00e803e46e39273ad369f1f871a026d7de220"
+        },
+        {
+            "type": "file",
+            "name": "todo.html",
+            "size": 47087,
+            "hash": "db692562b5bc79d8c149e3654aba2eb3cf1a488a3d8c8885cb165a999c7b5da7"
+        },
+        {
+            "type": "folder",
+            "name": "www"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_CA_GDP_RotB1k.png",
+            "size": 56593,
+            "hash": "ea6a502f82141c4668b2209f240484f09f04f1f1d5aa28c35b8b39de743799f8"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_CGDebt_GDP_RotB1k.png",
+            "size": 53528,
+            "hash": "ccbac1a15cb936225474d6f1d9bd535082437b765c556ec95ccdc0f051a2244f"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_CGExp_GDP_RotB1k.png",
+            "size": 58211,
+            "hash": "ce0b9c4d53804a52e225c08db3cee6e4a05815aaef0c33ce38fab13bc15f6e92"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_GGDebt_GDP_RotB1k.png",
+            "size": 56204,
+            "hash": "1b6867d57296818363493474fc74b378b0985d8178f429ecfa4fe4156e790c06"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_GGExp_GDP_RotB1k.png",
+            "size": 55476,
+            "hash": "e3a348fd4f6c64f2543784c2290a286fb05743a43910716a470e72e317e0e00d"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_GrossDomSavings_GDP_RotB1k.png",
+            "size": 59235,
+            "hash": "6d13e16dadb72765a1490d4ed368b3699b0e4d32c850ca1a48ffa948391003d0"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_cons_GDP_RotB1k.png",
+            "size": 54936,
+            "hash": "bac58c4e05e9db211ccf545324f1da866c1983df2c7f7c2dea000ebf779473bd"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_GrossSavings_GDP_RotB1k.png",
+            "size": 55514,
+            "hash": "9cd7497701b3cbd517f93a1b38809e62af5ea29d507a358ca112488e6f11959e"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_exports_GDP_RotB1k.png",
+            "size": 55846,
+            "hash": "ad4ba450e23579c102944d90d916b48c2bb85fcb66d47ddb0c81cfe08de97707"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_finv_GDP_RotB1k.png",
+            "size": 57768,
+            "hash": "5df1d9b92c1abc40c47cc9589bbafe636f59a28e3297b39ab596348f82a8cd07"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_imports_GDP_RotB1k.png",
+            "size": 57281,
+            "hash": "365ee59acad891c1dec633a4d540660e1175e565f844aa081c8d927be0be073f"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_inv_GDP_RotB1k.png",
+            "size": 60599,
+            "hash": "37e41a840fcc02b94c0fdf9ee6bb8f60a74d842689afcbdda566fa381d941063"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_labfopar_RotB1k.png",
+            "size": 53948,
+            "hash": "1adf04ee76f555fd616f6e94b5e822550bd00e042dd697417d21681f4385fd0e"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_lnrCGDebt_RotB1k.png",
+            "size": 54601,
+            "hash": "957276a79fc524deb43d288cd703c75986d8b377fcc68814a3d43fceddf33272"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_lnrCGExp_RotB1k.png",
+            "size": 57187,
+            "hash": "bc324349bb75d4ccc0ddfcd336334c79cd389985343e12c8d1d4d8dd4a20f0a8"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_lnrCons_RotB1k.png",
+            "size": 56377,
+            "hash": "b37cae6d87b7b117c2b76d40557ae3f1b32d3602faa6fdd57ad89deb5f3a418d"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_lnrExports_RotB1k.png",
+            "size": 57389,
+            "hash": "34f73e49c48bbd28bd9440fde2fddcbad194dfd3e5d3fbf64c84bd5e9ae1e4ea"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_lnrFinv_RotB1k.png",
+            "size": 57282,
+            "hash": "d0436b5c64b89f0839a413170ce2444d8330e297404b7e2e8ababdfd240ef98c"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_lnrGDP_RotB1k.png",
+            "size": 55244,
+            "hash": "6f2c8dc1c59865c39a9b4ab1e4b540e403e36ce8f5fcdb591ad6a0a570656cb4"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_lnrGDP_pot_RotB1k.png",
+            "size": 55284,
+            "hash": "f9c0f8f9273794009e2ed2d78f9c0320437bcdcd609074fdbcc457edae2f0e72"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_lnrGDP_pw_RotB1k.png",
+            "size": 54689,
+            "hash": "add717a9a22fceab56840f50218bfecc77302c1f2b98a052d84d9f8d295f3a15"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_lnrGGDebt_RotB1k.png",
+            "size": 54601,
+            "hash": "957276a79fc524deb43d288cd703c75986d8b377fcc68814a3d43fceddf33272"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_lnrGGExpend_RotB1k.png",
+            "size": 57087,
+            "hash": "54bda7b684d28086de5ddcbf987debdd9f5b33c574f2e576805b7a0edf66b98c"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_lnrGrossDomSavings_RotB1k.png",
+            "size": 57228,
+            "hash": "e0401a1a67155ed34c4ce3650b0cfdf789ddbaa84eab9b4b5569126cbdb32654"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_lnrGrossSavings_RotB1k.png",
+            "size": 57897,
+            "hash": "d6ee40fad5da88b4ac312caf27b68ec4ef3794a47849c0e5de8be4c64d7fedf2"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_lnrImports_RotB1k.png",
+            "size": 57450,
+            "hash": "5a8b716a6a2956fe597d285d19bfdef5d5f1ffb3c6a40e9ecbeafefc5ae7c17d"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_lnrInv_RotB1k.png",
+            "size": 57970,
+            "hash": "bc71f3bfd416918716a4664bd2250f65dd456e108b4f0efb83e83c05d1c4846c"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_lnrpensions_RotB1k.png",
+            "size": 58033,
+            "hash": "7e5411d3427a72665710674d2066d89de615cc63393d13536277e386f76e7d1e"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_lnrtfpna_RotB1k.png",
+            "size": 58576,
+            "hash": "c9ba6f8e2495dfe85088c0d153560c4eee0dd7a41ba07c5d444eb62fe79b717a"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_pensions_GDP_RotB1k.png",
+            "size": 61109,
+            "hash": "07d2b0f888cd8fb7c8c3a0b7628b7c3593a9f038a19a165ba2c320c0d17580a2"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_tradebal_GDP_RotB1k.png",
+            "size": 55931,
+            "hash": "80389162238c9890618dd53721e5fa558b687552cf6246c8e60505b9ef6be428"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_tx_act_5564_RotB1k.png",
+            "size": 56776,
+            "hash": "6e474cde996fde09ee530c2689b9edf64a3a190c7d9c541c9beec918a70f18ff"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_unemp2_RotB1k.png",
+            "size": 56299,
+            "hash": "64f6986756524c341cfb6d98537121fb0c5c119e4df642430fd8b9efeeec348f"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_CA_GDP_RotB1k.png",
+            "size": 54180,
+            "hash": "f2b8e50ecd37a8d3e8ed6280451ec3e9cce1c0bd561da44912d68fd10350d8f4"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_CGDebt_GDP_RotB1k.png",
+            "size": 55334,
+            "hash": "297c751bb2c066c8d45f2339aa519e3a0c959acf9e5d7d92ecbf38b3fbec5bb9"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_CGExp_GDP_RotB1k.png",
+            "size": 54627,
+            "hash": "68af59f6c0d4524c322d7e1f06e9d4619544f9e78188cfcd8ef891dca2b1d1a9"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_GGDebt_GDP_RotB1k.png",
+            "size": 52674,
+            "hash": "6d644cda36fad76759adce380ff5490c8573d2112b19122f11cc20bbd8bbfe88"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_GGExp_GDP_RotB1k.png",
+            "size": 52468,
+            "hash": "aef47a506d48fc313bc9b3c815ee1f0c7a4de703c67d1bf0bd8e4a5ba44d8418"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_GrossDomSavings_GDP_RotB1k.png",
+            "size": 54788,
+            "hash": "2c4f1f47faac3f80c6825d665b2b30a15402aff0aefd916f041088a35f0c157f"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_GrossSavings_GDP_RotB1k.png",
+            "size": 53343,
+            "hash": "917a6a22a4c9c56f6901d77d240f650ca3472334ecbd54cabd01036048b3fb3c"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_cons_GDP_RotB1k.png",
+            "size": 54802,
+            "hash": "2d1d89b2cb6e7b80f211918b371c88cc05e510003cabe61968f16750cd3b4265"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_exports_GDP_RotB1k.png",
+            "size": 54612,
+            "hash": "86ca09fda381e82667190471bd3911e180a6db367523fec3fb3e525916de859a"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_finv_GDP_RotB1k.png",
+            "size": 54269,
+            "hash": "5450542b976834d4882d96c7f5636cb443054f68b31993c0f0b2900de76f97d1"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_imports_GDP_RotB1k.png",
+            "size": 57119,
+            "hash": "bc9096d63e2a690826efb13ce4ac9caa1b0cdb624b59ea9e03760a8e7e1754ad"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_inv_GDP_RotB1k.png",
+            "size": 54184,
+            "hash": "d0877c516536f7059d1277c2ff94cd37516bec5ea09c2a2c84b73ed8937f7b30"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_labfopar_RotB1k.png",
+            "size": 58038,
+            "hash": "29cdd8f9c45198edef4ed7a6113711d6377c3b90353a2aee053fce036602b911"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_lnrCGDebt_RotB1k.png",
+            "size": 52185,
+            "hash": "88564a355b323a5526fe2ef606c0255b163cd697d4178dacb28fc0bca5d62773"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_lnrCGExp_RotB1k.png",
+            "size": 53743,
+            "hash": "c2f219f8f9f141436427b30459d1d093c752370a08e89b8f62333f2254a893be"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_lnrCons_RotB1k.png",
+            "size": 57713,
+            "hash": "294b5781414df6c81dc4b9325d1ce8bec57404008d3d23187da6681ad9d4154d"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_lnrExports_RotB1k.png",
+            "size": 51872,
+            "hash": "292a3630de1026d6dbc068619782748d3ff5447435869035f5d7435bb9cda1eb"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_lnrFinv_RotB1k.png",
+            "size": 54184,
+            "hash": "a9082d8d0f982f853de99ce3fbcfb755fa692ec9b07b6989ebc9e8d14611cde2"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_lnrGDP_RotB1k.png",
+            "size": 51987,
+            "hash": "c97c008f5693a7e8135b6f36d4a7662b3fe9ffcfee5e1c521ae3cbecc539f3bc"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_lnrGDP_pw_RotB1k.png",
+            "size": 55173,
+            "hash": "148467051c969d722058e805db4c1c2ae6bb2189f0abe3a98a36866f225bedff"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_lnrGDP_pot_RotB1k.png",
+            "size": 56338,
+            "hash": "b938d75f11868ed0b7043f4af13f6114fd86efa7391be8ed1eeb1ef5b1de221a"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_lnrGGDebt_RotB1k.png",
+            "size": 52185,
+            "hash": "88564a355b323a5526fe2ef606c0255b163cd697d4178dacb28fc0bca5d62773"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_lnrGGExpend_RotB1k.png",
+            "size": 55842,
+            "hash": "657e8565fc33d4360bf64830afcf5914a467e05cf7c7bdd193f8f5deb4858be4"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_lnrGrossDomSavings_RotB1k.png",
+            "size": 53385,
+            "hash": "646bcc22482c97f97d863b5fdbd3e36686e7de7e469f0fd4546e7daf7b5e0e05"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_lnrGrossSavings_RotB1k.png",
+            "size": 54903,
+            "hash": "da6762268e739490cc56fe73ed1fa4800a0bbfee6b0e8c92cb07d43c4b6d6568"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_lnrImports_RotB1k.png",
+            "size": 55703,
+            "hash": "af5d7498f1466811e346883b863e929041dfff76c5735eb5ce6462311da7b4f7"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_lnrInv_RotB1k.png",
+            "size": 53052,
+            "hash": "0a2bd939a172b9b3a0e669988d30e62d92e97aa8315f0fd8d883e5701bad3cc8"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_lnrpensions_RotB1k.png",
+            "size": 51980,
+            "hash": "715d8873e9ed4477f25d0253f1df0a109a5f4409562f9e46c560450ed870055b"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_lnrtfpna_RotB1k.png",
+            "size": 55029,
+            "hash": "ff738bf89ea491949f931e0e123f869489937d0285380d61b95321ae8d99fd75"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_pensions_GDP_RotB1k.png",
+            "size": 51346,
+            "hash": "6b255c473f2d726ec1f85c894e1d9c605069b49053d6291d6c988ae03d707e2d"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_tradebal_GDP_RotB1k.png",
+            "size": 54301,
+            "hash": "ef265a297faa638109fcd491dfa1debc6f60c6ec5786728f3e6506c2a6e6edd5"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_tx_act_5564_RotB1k.png",
+            "size": 52444,
+            "hash": "b70055f2416434d9e8237ba81a31467f731dbc74ec885a55282aee391a3e263b"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_unemp2_RotB1k.png",
+            "size": 51992,
+            "hash": "4a2116b6a60f33f1fd63e2257e5d538185c3acd8bd220c017c3b1431901de93d"
+        },
+        {
+            "type": "file",
+            "name": "figures/FiscalConso_GrossDSavingsGDP.png",
+            "size": 297670,
+            "hash": "bdc7aede7fc851c52cfdf4aa576a9a8d58dfb79b8333aa534276725a1dd89a8c"
+        },
+        {
+            "type": "file",
+            "name": "figures/FiscalConso_finv_GDP.png",
+            "size": 308892,
+            "hash": "5bdc7bf70ce4db64b46e4ef3c3e83116ea3c9e71020c9d47bc3e9800e9ead392"
+        },
+        {
+            "type": "file",
+            "name": "figures/FiscalConso_inv_GDP.png",
+            "size": 301790,
+            "hash": "5215d1819b4d23440f809ec39e92b08b50bf4874c0594c709f7b1e195f587158"
+        },
+        {
+            "type": "file",
+            "name": "figures/FiscalConso_labfopar.png",
+            "size": 300030,
+            "hash": "442a5e781043156d75e6296bb53fb48111961ad3566b34224849e4be36afeebe"
+        },
+        {
+            "type": "file",
+            "name": "figures/FiscalConso_lnrCons.png",
+            "size": 282002,
+            "hash": "0a3f98f23ee18ba6f02ca9013436be03ad6e026461cf36b1a5cc39cad9640339"
+        },
+        {
+            "type": "file",
+            "name": "figures/FiscalConso_lnrFinv.png",
+            "size": 295135,
+            "hash": "cf941670cfcab67a870ae4fda15b3bb28c559daa295bca102efe56a26c46c391"
+        },
+        {
+            "type": "file",
+            "name": "figures/FiscalConso_lnrGDP.png",
+            "size": 277512,
+            "hash": "ddca5dc25ac25531e3eff3ab51fbf0f40e9e2ae89fdf61dec69245f43cc9e25e"
+        },
+        {
+            "type": "file",
+            "name": "figures/FiscalConso_lnrGDP_pot.png",
+            "size": 267637,
+            "hash": "e497c57c4ce477b1ce2ded763454c537b991574c4e7121e44e6f17c3c869a719"
+        },
+        {
+            "type": "file",
+            "name": "figures/FiscalConso_lnrGrossDomSavings.png",
+            "size": 285142,
+            "hash": "e25a994748bffedc4810922efe460036b80bfb55ee9418d2d823b9566bd5410a"
+        },
+        {
+            "type": "file",
+            "name": "figures/FiscalConso_lnrInv.png",
+            "size": 287659,
+            "hash": "fd6db6db53e418b5af5d58d56de21463b34f4c975e5e9c37e5cc548d13e1fb9a"
+        },
+        {
+            "type": "file",
+            "name": "figures/FiscalConso_tx_act_5564.png",
+            "size": 263968,
+            "hash": "65a63c0f0efaf9a04a9d50f46e2ad47c842ca54672089a5b7fe9b7a433b5c6ae"
+        },
+        {
+            "type": "file",
+            "name": "figures/Googletr_GrossDSavingsGDP.png",
+            "size": 193447,
+            "hash": "295e6d55c91ee55f54d63624aad16063c1703969a6175f11f468283c2c26ecfd"
+        },
+        {
+            "type": "file",
+            "name": "figures/Googletr_finv_GDP.png",
+            "size": 189226,
+            "hash": "72ee556101d26ecb9b4e0b86b5192e88b9b0a60bde9766c2e235dff8ce557b37"
+        },
+        {
+            "type": "file",
+            "name": "figures/Googletr_inv_GDP.png",
+            "size": 178426,
+            "hash": "b16787d92182f11f60759ccab03346f639aa7e0b6667b6719d57ffe8a9fa03a6"
+        },
+        {
+            "type": "file",
+            "name": "figures/Googletr_labfopar.png",
+            "size": 182438,
+            "hash": "f1694a73f4423e46612c8949c2977ba46f2e0ce1fce4ff595fe4479b3e9b1d0c"
+        },
+        {
+            "type": "file",
+            "name": "figures/Googletr_lnrCons.png",
+            "size": 213548,
+            "hash": "7b2f489da30918c1f3d6a9f7511c2a04f95e05af9495c65a1d5bd1fd8ce3b562"
+        },
+        {
+            "type": "file",
+            "name": "figures/Googletr_lnrFinv.png",
+            "size": 191960,
+            "hash": "39ef09916f60d5a1332b37d5ec8b26eeb4639254ec0886949d8506901c8449ae"
+        },
+        {
+            "type": "file",
+            "name": "figures/Googletr_lnrGDP.png",
+            "size": 199875,
+            "hash": "1163f6b63a5fcb8bc15e52a40a5d5da7999f3546d7e9ad03f0effcd1e68e7218"
+        },
+        {
+            "type": "file",
+            "name": "figures/Googletr_lnrGDP_pot.png",
+            "size": 212186,
+            "hash": "517a21e11147779b1d4c5e55bc4a77d27e5ca200d8a5613d4b2148a24598ba2f"
+        },
+        {
+            "type": "file",
+            "name": "figures/Googletr_lnrGrossDomSavings.png",
+            "size": 204968,
+            "hash": "914f7670dc4c3929760c6e63169688be43a04d2f68a6f1f6b371d78312c6dd55"
+        },
+        {
+            "type": "file",
+            "name": "figures/Googletr_lnrInv.png",
+            "size": 196777,
+            "hash": "020c5880fb2e31f3a7ec6265a136ad4e7ee78cc21d86b1d498017c590fc97043"
+        },
+        {
+            "type": "file",
+            "name": "figures/Googletr_tx_act_5564.png",
+            "size": 186645,
+            "hash": "b8a5b4ddd04c3eea9777f818fe579cb6332f79a2ee27fc1f59320d80e4438197"
+        },
+        {
+            "type": "file",
+            "name": "figures/Placebo_GrossDomSavings_GDP.png",
+            "size": 113619,
+            "hash": "b14a1248e7f9c709017b4d5a3e3a2696877e3d297943d50ef2185272156f14ce"
+        },
+        {
+            "type": "file",
+            "name": "figures/Placebo_cons_GDP.png",
+            "size": 132048,
+            "hash": "0064082dae55e6199b5035b73df3b6e7e2986cf4771c097f2fcd377c51c5b065"
+        },
+        {
+            "type": "file",
+            "name": "figures/Placebo_finv_GDP.png",
+            "size": 128162,
+            "hash": "806cca04f295af2c9b5883431a3194dac396eb6fa5cc5431593830016b65b2a0"
+        },
+        {
+            "type": "file",
+            "name": "figures/Placebo_inv_GDP.png",
+            "size": 129679,
+            "hash": "bc1199ed6b12053716bbfdb608876c1aa4e8f4464437a4958c6d154adbb557b3"
+        },
+        {
+            "type": "file",
+            "name": "figures/Placebo_labfopar.png",
+            "size": 132803,
+            "hash": "cab1f9ee40bbf90dd4dccacdbcc14eacd0dd7ee76c8d44b9f73cb68611822961"
+        },
+        {
+            "type": "file",
+            "name": "figures/Placebo_lnrCons.png",
+            "size": 144090,
+            "hash": "d12999a74dba788518b9246219791dd32921a67d7ec677db2e22c6dd98a8c4e0"
+        },
+        {
+            "type": "file",
+            "name": "figures/Placebo_lnrFinv.png",
+            "size": 156309,
+            "hash": "e299be952952047ab43d0e0df78057d70e7f2b1c11a202250c43b4db1c97bd30"
+        },
+        {
+            "type": "file",
+            "name": "figures/Placebo_lnrGDP.png",
+            "size": 147685,
+            "hash": "b4f900e7a9f91f73fb01bace025023d184e38f6464ace81e79dc5b035da48eb2"
+        },
+        {
+            "type": "file",
+            "name": "figures/Placebo_lnrGDP_pot.png",
+            "size": 137659,
+            "hash": "043c3e346f5cf816f3f54fff16635d82452878350b510e0f9adf8a7ad5089078"
+        },
+        {
+            "type": "file",
+            "name": "figures/Placebo_lnrGrossDomSavings.png",
+            "size": 147351,
+            "hash": "0b7b0b1ed84bb15aaad40971ca3a9749563dbe0d2f42bf057d22174c26e4914b"
+        },
+        {
+            "type": "file",
+            "name": "figures/Placebo_lnrInv.png",
+            "size": 159186,
+            "hash": "847329c226d4dc036efb4798855d40bc2e4881aa4c315631e1cb133ec1b50848"
+        },
+        {
+            "type": "file",
+            "name": "figures/Placebo_tx_act_5564.png",
+            "size": 103003,
+            "hash": "6e3c32f9cdd617c26617de90b594596aa73e16f0e0262656f55d63b872748469"
+        },
+        {
+            "type": "file",
+            "name": "figures/Spillover_GrossDSavingsGDP.png",
+            "size": 111867,
+            "hash": "4ef782b0354b9298a4915dd5269c7ec4c8280ec5a6932adc1d73e7125bdc9588"
+        },
+        {
+            "type": "file",
+            "name": "figures/Spillover_finv_GDP.png",
+            "size": 118434,
+            "hash": "ee2ca4c8d5270c4d1ed5bb4e742abe83f8f26dc2bdc66bd2041c6c12aac053b9"
+        },
+        {
+            "type": "file",
+            "name": "figures/Spillover_inv_GDP.png",
+            "size": 121777,
+            "hash": "afced1e8f96e8280de4da27444b978c549a9843707acf19621926b4abe7c24ab"
+        },
+        {
+            "type": "file",
+            "name": "figures/Spillover_labfopar.png",
+            "size": 117280,
+            "hash": "6138f8fbcb2d67bf5b8e124ed8ca73d3b2e16e5ef92e64e5267fe1c337042e33"
+        },
+        {
+            "type": "file",
+            "name": "figures/Spillover_lnrCons.png",
+            "size": 117052,
+            "hash": "a86dac85a2b916fd203c251e96e4309b862826b1758afdc4e99544aafc5fd671"
+        },
+        {
+            "type": "file",
+            "name": "figures/Spillover_lnrFinv.png",
+            "size": 113231,
+            "hash": "7eb9e52b20828f70b361e3d1848ac0e07ee8b43c003a35fbb8659a2698cd7bc7"
+        },
+        {
+            "type": "file",
+            "name": "figures/Spillover_lnrGDP.png",
+            "size": 112863,
+            "hash": "f8cc20356fd2b084e7566de304bc423e6e382cd5789b1bece1e9dd3f52994fde"
+        },
+        {
+            "type": "file",
+            "name": "figures/Spillover_lnrGDP_pot.png",
+            "size": 113771,
+            "hash": "5992535ddf4daecf5ff6e2aa7125212f1ff5281045e04c6662f520b98e35839b"
+        },
+        {
+            "type": "file",
+            "name": "figures/Spillover_lnrGrossDomSavings.png",
+            "size": 111676,
+            "hash": "52b036de5ba480b6164775fd8097e23698c24a2e3d458295acdf0988b9252d5f"
+        },
+        {
+            "type": "file",
+            "name": "figures/Spillover_lnrInv.png",
+            "size": 114366,
+            "hash": "fbc3e07edc2e979853b9d32c28c02f0ea4b62ef0511fd37951a89111fc3fd1cf"
+        },
+        {
+            "type": "file",
+            "name": "figures/Spillover_tx_act_5564.png",
+            "size": 108709,
+            "hash": "d38afa747fe8864a5168394971b9208c0d6639b0b1eae1be7bcf0685d7bf9797"
+        },
+        {
+            "type": "file",
+            "name": "figures/dF_Capi_finv_GDP_SOut.png",
+            "size": 133581,
+            "hash": "c8991570dd643a006aed3505f6d55115febcd12c5f2f8f23475450342bee50c4"
+        },
+        {
+            "type": "file",
+            "name": "figures/dF_Capi_inv_GDP_SOut.png",
+            "size": 138215,
+            "hash": "0d299f6de3e25a8fdd3ab6da23b0e32cc705cc458e4c75a315607e713fbf269a"
+        },
+        {
+            "type": "file",
+            "name": "figures/dF_Capi_lnrFinv_SOut.png",
+            "size": 135922,
+            "hash": "3350c711f45046b62f814c3422bcc976c8df4d7cfefb925d2ab041a61791d694"
+        },
+        {
+            "type": "file",
+            "name": "figures/dF_Capi_lnrGDP_SOut.png",
+            "size": 133801,
+            "hash": "41b933f6af9375674695113950a9a3e5f809e3303e5c7a3713027ce13e4246cb"
+        },
+        {
+            "type": "file",
+            "name": "figures/dF_Capi_lnrGDP_pot_SOut.png",
+            "size": 138936,
+            "hash": "db36d48ece37cd5554dd1538f6a4d52a237d6bd65df5587f34352acff604bd48"
+        },
+        {
+            "type": "file",
+            "name": "figures/dF_Capi_lnrInv_SOut.png",
+            "size": 136429,
+            "hash": "7c545073a233de7788168f48c3d3604dc79dce5892e4c61546adcebfc5bc1e3c"
+        },
+        {
+            "type": "folder",
+            "name": "site_libs/bootstrap"
+        },
+        {
+            "type": "folder",
+            "name": "site_libs/clipboard"
+        },
+        {
+            "type": "folder",
+            "name": "site_libs/cookie-consent"
+        },
+        {
+            "type": "folder",
+            "name": "site_libs/quarto-contrib"
+        },
+        {
+            "type": "folder",
+            "name": "site_libs/quarto-html"
+        },
+        {
+            "type": "folder",
+            "name": "site_libs/quarto-nav"
+        },
+        {
+            "type": "folder",
+            "name": "site_libs/quarto-search"
+        },
+        {
+            "type": "file",
+            "name": "www/ifeofce.png",
+            "size": 31943,
+            "hash": "143cd7741c816137cdf754ac916f8d5ab624325887e7e72dce5c2d71a9e9df54"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/bootstrap/bootstrap-icons.css",
+            "size": 99464,
+            "hash": "01253947f506e030589e4f33fc7ec7ccdfb9505e2e596dedf16445f12e243c0a"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/bootstrap/bootstrap-eb59f3e9777795da5006961f778b36ba.min.css",
+            "size": 526701,
+            "hash": "bdadcac77904bd39b018e38e84acdf611fee5aef4b41773f6e92b3fab0714998"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/bootstrap/bootstrap-icons.woff",
+            "size": 180288,
+            "hash": "f55513b7b591cb84a3b87ff0e34ea24d4831d6fedc22e54b911ca64b5b544a15"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/bootstrap/bootstrap.min.js",
+            "size": 80668,
+            "hash": "d2ea6c1e0cabca20d18e924b25a1cd0187c38ba7c33f60ab06e1b0402b9bcdb5"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/clipboard/clipboard.min.js",
+            "size": 9160,
+            "hash": "e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/cookie-consent/cookie-consent.css",
+            "size": 75,
+            "hash": "9be199c11f99e906de71b99a9d4e7e113b979007c90125d7c49a593bc7f22e28"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/cookie-consent/cookie-consent.js",
+            "size": 206910,
+            "hash": "8705f2ec4440409a916b9e3a76e038446f806d1d3a5c15be1815691280cd3a38"
+        },
+        {
+            "type": "folder",
+            "name": "site_libs/quarto-contrib/glightbox"
+        },
+        {
+            "type": "folder",
+            "name": "site_libs/quarto-contrib/quarto-project"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-html/anchor.min.js",
+            "size": 5888,
+            "hash": "69098e105d990f834cff1b7886d873444228ff63c590e5ff834d568f1115ed8b"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-html/popper.min.js",
+            "size": 20084,
+            "hash": "4d50586b184724d39ddfe0f6582861664eddd5e806e5a79e0dbaa832361414d0"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-html/quarto-syntax-highlighting-9ae5c72b37dfa155a0c3e107e79de40a.css",
+            "size": 3616,
+            "hash": "9abddaebb8b11a4586c2d975d63ef4da00b31c46c7f0c720fcff4d329fcb0dc0"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-html/quarto.js",
+            "size": 28472,
+            "hash": "ff69fff180226f37a042e27a4046ca1f6d585b3e454452e27d3549161f7070fd"
+        },
+        {
+            "type": "folder",
+            "name": "site_libs/quarto-html/scrollable-regions"
+        },
+        {
+            "type": "folder",
+            "name": "site_libs/quarto-html/tabsets"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-html/tippy.css",
+            "size": 1409,
+            "hash": "5969f497d9158d7682f8219c6f13fa67269cdf5bf50a3931d95327151dee5678"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-nav/headroom.min.js",
+            "size": 4570,
+            "hash": "5b80cc4165a661a3f2060d6bdb5ccff591f04c4f8e39a06c12d3c2544587cb17"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-html/tippy.umd.min.js",
+            "size": 24033,
+            "hash": "41181eeec6d7ba64cb9165f0e95563e34e026bde79e7c13aeec83270429b6fae"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-nav/quarto-nav.js",
+            "size": 9851,
+            "hash": "a209dafb198d7c8e77cb398912b7225806e7b998211afa1fb269a4ef54ff56f6"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-search/autocomplete.umd.js",
+            "size": 96397,
+            "hash": "cd9db3b7d812139a4679a2566ea8f01b2a80159490a60b9e9e813e81b5e00a05"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-search/fuse.min.js",
+            "size": 23539,
+            "hash": "c57339c3fa16b1d69d9a6b46749a8139ef8d4fc9bbfe48144ff897aa7d4222ec"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-search/quarto-search.js",
+            "size": 43121,
+            "hash": "1a23221f499b3993dc66ca5c8913e4e6602dfa4652337e9fbf75139ded5ece68"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-contrib/glightbox/glightbox.min.css",
+            "size": 13749,
+            "hash": "6d3f62d4d17969f9c70e9438cf671004725019e868123f2ebc295a006f8d5d2d"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-contrib/glightbox/glightbox.min.js",
+            "size": 55880,
+            "hash": "03dfe1fbce92a9f17fcd1a1501213bd820d050ab085c338419ab06a3631c9459"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-contrib/glightbox/lightbox.css",
+            "size": 640,
+            "hash": "6b3fe0e87e89511791431a74df3b4026b4560b17e135440baa8435d0698afd01"
+        },
+        {
+            "type": "folder",
+            "name": "site_libs/quarto-contrib/quarto-project/ofce"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-html/scrollable-regions/scrollable-regions.js",
+            "size": 6782,
+            "hash": "b2f956903f5b9c36742454e74d37571f96eceedad7b0b603abc9fac713cf992e"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-html/tabsets/tabsets.js",
+            "size": 2882,
+            "hash": "a9c226bf70e82eaf5476f619cecfb70b4446b87ce4d1634d6404b0b2ba006d15"
+        },
+        {
+            "type": "folder",
+            "name": "site_libs/quarto-contrib/quarto-project/ofce/ofce"
+        },
+        {
+            "type": "folder",
+            "name": "site_libs/quarto-contrib/quarto-project/ofce/ofce/img"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-contrib/quarto-project/ofce/ofce/img/ofce.png",
+            "size": 7015,
+            "hash": "a3adc5a6f888a96b725da922ac2176d472f669cc6ed25f90e104ed1111e67160"
+        }
+    ]
+}
