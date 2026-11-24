@@ -1,19 +1,19 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1795018588244,
+    "generatedTime": 1795513984026,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
-            "size": 35370,
-            "hash": "62eb7e53f93a1aa614cb9200e88d0ab6256190a377b02570d8496d32c8a95a1b"
+            "size": 35358,
+            "hash": "d7e9bc7d90c7157d98a19c51344b1249b228026243d57a9177c7425c95ec3590"
         },
         {
             "type": "file",
             "name": "OFCEWP2026-14.pdf",
-            "size": 3518050,
-            "hash": "c4685077e36a2f123d97f59b893f1141e5c027b159d811b09bbb543324ec1759"
+            "size": 3518057,
+            "hash": "fa90f2f6218f4a9159b2a9754af75fe48d3fe3b1be5682b882e435932f6e342b"
         },
         {
             "type": "file",
@@ -29,13 +29,13 @@
             "type": "file",
             "name": "index.html",
             "size": 327411,
-            "hash": "00b1dde4b2b3c5975c9243c061f28e29b57c9280ae02fd2e1b8e203bab09ccf3"
+            "hash": "89e6f29fd9986b527a61b6a6923646e022b2f40c699289df12e89e821ffe44fc"
         },
         {
             "type": "file",
             "name": "manifest.json",
             "size": 2419,
-            "hash": "920a3b837ef956c558f638cef17c70805428bc46295eefdee089e54ea800c7ed"
+            "hash": "780ef799af61751d6dbfeeb39028b3a3328fd035248a14cbcfc93e40b9b2a751"
         },
         {
             "type": "file",
@@ -57,7 +57,7 @@
             "type": "file",
             "name": "sitemap.xml",
             "size": 578,
-            "hash": "3c81f06e6bbfd752811cf6542ff00e803e46e39273ad369f1f871a026d7de220"
+            "hash": "f77ec5e9029f1d110eeb41ee272ea0929856ae6295755ef355b919386fdb37c3"
         },
         {
             "type": "file",
@@ -107,15 +107,15 @@
         },
         {
             "type": "file",
-            "name": "figures/Age_cons_GDP_RotB1k.png",
-            "size": 54936,
-            "hash": "bac58c4e05e9db211ccf545324f1da866c1983df2c7f7c2dea000ebf779473bd"
-        },
-        {
-            "type": "file",
             "name": "figures/Age_GrossSavings_GDP_RotB1k.png",
             "size": 55514,
             "hash": "9cd7497701b3cbd517f93a1b38809e62af5ea29d507a358ca112488e6f11959e"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_cons_GDP_RotB1k.png",
+            "size": 54936,
+            "hash": "bac58c4e05e9db211ccf545324f1da866c1983df2c7f7c2dea000ebf779473bd"
         },
         {
             "type": "file",
@@ -155,15 +155,15 @@
         },
         {
             "type": "file",
-            "name": "figures/Age_lnrCGExp_RotB1k.png",
-            "size": 57187,
-            "hash": "bc324349bb75d4ccc0ddfcd336334c79cd389985343e12c8d1d4d8dd4a20f0a8"
-        },
-        {
-            "type": "file",
             "name": "figures/Age_lnrCons_RotB1k.png",
             "size": 56377,
             "hash": "b37cae6d87b7b117c2b76d40557ae3f1b32d3602faa6fdd57ad89deb5f3a418d"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_lnrCGExp_RotB1k.png",
+            "size": 57187,
+            "hash": "bc324349bb75d4ccc0ddfcd336334c79cd389985343e12c8d1d4d8dd4a20f0a8"
         },
         {
             "type": "file",
@@ -179,15 +179,15 @@
         },
         {
             "type": "file",
-            "name": "figures/Age_lnrGDP_RotB1k.png",
-            "size": 55244,
-            "hash": "6f2c8dc1c59865c39a9b4ab1e4b540e403e36ce8f5fcdb591ad6a0a570656cb4"
-        },
-        {
-            "type": "file",
             "name": "figures/Age_lnrGDP_pot_RotB1k.png",
             "size": 55284,
             "hash": "f9c0f8f9273794009e2ed2d78f9c0320437bcdcd609074fdbcc457edae2f0e72"
+        },
+        {
+            "type": "file",
+            "name": "figures/Age_lnrGDP_RotB1k.png",
+            "size": 55244,
+            "hash": "6f2c8dc1c59865c39a9b4ab1e4b540e403e36ce8f5fcdb591ad6a0a570656cb4"
         },
         {
             "type": "file",
@@ -383,15 +383,15 @@
         },
         {
             "type": "file",
-            "name": "figures/Capi_lnrGDP_pw_RotB1k.png",
-            "size": 55173,
-            "hash": "148467051c969d722058e805db4c1c2ae6bb2189f0abe3a98a36866f225bedff"
-        },
-        {
-            "type": "file",
             "name": "figures/Capi_lnrGDP_pot_RotB1k.png",
             "size": 56338,
             "hash": "b938d75f11868ed0b7043f4af13f6114fd86efa7391be8ed1eeb1ef5b1de221a"
+        },
+        {
+            "type": "file",
+            "name": "figures/Capi_lnrGDP_pw_RotB1k.png",
+            "size": 55173,
+            "hash": "148467051c969d722058e805db4c1c2ae6bb2189f0abe3a98a36866f225bedff"
         },
         {
             "type": "file",
@@ -683,15 +683,15 @@
         },
         {
             "type": "file",
-            "name": "figures/Spillover_inv_GDP.png",
-            "size": 121777,
-            "hash": "afced1e8f96e8280de4da27444b978c549a9843707acf19621926b4abe7c24ab"
-        },
-        {
-            "type": "file",
             "name": "figures/Spillover_labfopar.png",
             "size": 117280,
             "hash": "6138f8fbcb2d67bf5b8e124ed8ca73d3b2e16e5ef92e64e5267fe1c337042e33"
+        },
+        {
+            "type": "file",
+            "name": "figures/Spillover_inv_GDP.png",
+            "size": 121777,
+            "hash": "afced1e8f96e8280de4da27444b978c549a9843707acf19621926b4abe7c24ab"
         },
         {
             "type": "file",
@@ -725,15 +725,15 @@
         },
         {
             "type": "file",
-            "name": "figures/Spillover_lnrInv.png",
-            "size": 114366,
-            "hash": "fbc3e07edc2e979853b9d32c28c02f0ea4b62ef0511fd37951a89111fc3fd1cf"
-        },
-        {
-            "type": "file",
             "name": "figures/Spillover_tx_act_5564.png",
             "size": 108709,
             "hash": "d38afa747fe8864a5168394971b9208c0d6639b0b1eae1be7bcf0685d7bf9797"
+        },
+        {
+            "type": "file",
+            "name": "figures/Spillover_lnrInv.png",
+            "size": 114366,
+            "hash": "fbc3e07edc2e979853b9d32c28c02f0ea4b62ef0511fd37951a89111fc3fd1cf"
         },
         {
             "type": "file",
@@ -773,11 +773,11 @@
         },
         {
             "type": "folder",
-            "name": "site_libs/bootstrap"
+            "name": "site_libs/clipboard"
         },
         {
             "type": "folder",
-            "name": "site_libs/clipboard"
+            "name": "site_libs/bootstrap"
         },
         {
             "type": "folder",
@@ -789,15 +789,15 @@
         },
         {
             "type": "folder",
-            "name": "site_libs/quarto-html"
-        },
-        {
-            "type": "folder",
             "name": "site_libs/quarto-nav"
         },
         {
             "type": "folder",
             "name": "site_libs/quarto-search"
+        },
+        {
+            "type": "folder",
+            "name": "site_libs/quarto-html"
         },
         {
             "type": "file",
@@ -807,15 +807,21 @@
         },
         {
             "type": "file",
-            "name": "site_libs/bootstrap/bootstrap-icons.css",
-            "size": 99464,
-            "hash": "01253947f506e030589e4f33fc7ec7ccdfb9505e2e596dedf16445f12e243c0a"
+            "name": "site_libs/clipboard/clipboard.min.js",
+            "size": 9160,
+            "hash": "e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9"
         },
         {
             "type": "file",
             "name": "site_libs/bootstrap/bootstrap-eb59f3e9777795da5006961f778b36ba.min.css",
             "size": 526701,
             "hash": "bdadcac77904bd39b018e38e84acdf611fee5aef4b41773f6e92b3fab0714998"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/bootstrap/bootstrap-icons.css",
+            "size": 99464,
+            "hash": "01253947f506e030589e4f33fc7ec7ccdfb9505e2e596dedf16445f12e243c0a"
         },
         {
             "type": "file",
@@ -828,12 +834,6 @@
             "name": "site_libs/bootstrap/bootstrap.min.js",
             "size": 80668,
             "hash": "d2ea6c1e0cabca20d18e924b25a1cd0187c38ba7c33f60ab06e1b0402b9bcdb5"
-        },
-        {
-            "type": "file",
-            "name": "site_libs/clipboard/clipboard.min.js",
-            "size": 9160,
-            "hash": "e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9"
         },
         {
             "type": "file",
@@ -854,6 +854,36 @@
         {
             "type": "folder",
             "name": "site_libs/quarto-contrib/quarto-project"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-nav/headroom.min.js",
+            "size": 4570,
+            "hash": "5b80cc4165a661a3f2060d6bdb5ccff591f04c4f8e39a06c12d3c2544587cb17"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-nav/quarto-nav.js",
+            "size": 9851,
+            "hash": "a209dafb198d7c8e77cb398912b7225806e7b998211afa1fb269a4ef54ff56f6"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-search/autocomplete.umd.js",
+            "size": 96397,
+            "hash": "cd9db3b7d812139a4679a2566ea8f01b2a80159490a60b9e9e813e81b5e00a05"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-search/fuse.min.js",
+            "size": 23539,
+            "hash": "c57339c3fa16b1d69d9a6b46749a8139ef8d4fc9bbfe48144ff897aa7d4222ec"
+        },
+        {
+            "type": "file",
+            "name": "site_libs/quarto-search/quarto-search.js",
+            "size": 43121,
+            "hash": "1a23221f499b3993dc66ca5c8913e4e6602dfa4652337e9fbf75139ded5ece68"
         },
         {
             "type": "file",
@@ -895,39 +925,9 @@
         },
         {
             "type": "file",
-            "name": "site_libs/quarto-nav/headroom.min.js",
-            "size": 4570,
-            "hash": "5b80cc4165a661a3f2060d6bdb5ccff591f04c4f8e39a06c12d3c2544587cb17"
-        },
-        {
-            "type": "file",
             "name": "site_libs/quarto-html/tippy.umd.min.js",
             "size": 24033,
             "hash": "41181eeec6d7ba64cb9165f0e95563e34e026bde79e7c13aeec83270429b6fae"
-        },
-        {
-            "type": "file",
-            "name": "site_libs/quarto-nav/quarto-nav.js",
-            "size": 9851,
-            "hash": "a209dafb198d7c8e77cb398912b7225806e7b998211afa1fb269a4ef54ff56f6"
-        },
-        {
-            "type": "file",
-            "name": "site_libs/quarto-search/autocomplete.umd.js",
-            "size": 96397,
-            "hash": "cd9db3b7d812139a4679a2566ea8f01b2a80159490a60b9e9e813e81b5e00a05"
-        },
-        {
-            "type": "file",
-            "name": "site_libs/quarto-search/fuse.min.js",
-            "size": 23539,
-            "hash": "c57339c3fa16b1d69d9a6b46749a8139ef8d4fc9bbfe48144ff897aa7d4222ec"
-        },
-        {
-            "type": "file",
-            "name": "site_libs/quarto-search/quarto-search.js",
-            "size": 43121,
-            "hash": "1a23221f499b3993dc66ca5c8913e4e6602dfa4652337e9fbf75139ded5ece68"
         },
         {
             "type": "file",
